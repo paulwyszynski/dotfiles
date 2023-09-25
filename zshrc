@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/paulwyszynski/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -61,7 +61,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/.oh-my-zsh/custom/
+ZSH_CUSTOM="$HOME/.oh-my-zsh/custom/"
 
 # By default, powerlevel9k is a single-lined prompt.
 # If you would like to have the segments display on one line,
@@ -118,7 +118,7 @@ export PATH={$PATH}:/Users/paulwyszynski/Library/Android/sdk/platform-tools:/usr
 
 # export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/Users/paulwyszynski/Library/Android/sdk/cmdline-tools/latest/bin:$PATH"
+export PATH="$HOME/Library/Android/sdk/cmdline-tools/latest/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 
 # Alias keybindings
