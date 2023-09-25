@@ -8,6 +8,18 @@
     ~/.ideavimrc: ideavimrc
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
+    # lazygit
+    # brew
+    # zellij
+    # fork
+    # alfred
+    # amethyst
+    # appcleaner
+    # android studio settings
+    # xcode settings
+    # sf symbols
+    # obsidian
+    # nvim (nvchad)
 
 # - create:
 #     - ~/downloads
@@ -15,3 +27,7 @@
 #
 # - shell:
 #   - [git submodule update --init --recursive, Installing submodules]
+#   command: Run shell script here
+#   stdin: trues
+#   stdout: true
+#   description: Bootstrapping tools
