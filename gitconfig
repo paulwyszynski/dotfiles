@@ -1,0 +1,27 @@
+[user]
+	name = Paul Wyszynski
+	email = paul.wyszynski@jamitlabs.com
+[core]
+	excludesfile = \"$HOME\"/.gitignore
+  pager = delta
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = \"$HOME\"/.stCommitMsg
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    line-numbers = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
+[pull]
+	rebase = true
+[fetch]
+	prune = true
