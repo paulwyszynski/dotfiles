@@ -126,6 +126,7 @@ alias lg='lazygit'
 alias l='exa -lhUu --git --group-directories-first --icons --no-user'
 alias ll='exa -alhUu --git --group-directories-first --icons --no-user'
 alias lll='exa -alThUu --git --group-directories-first --icons --level=5 --no-user'
+alias z='zellij'
 
 # Custom output when you start zsh
 # neofetch
