@@ -25,9 +25,11 @@
 #     - ~/downloads
 #     - ~/.vim/undo-history
 #
-# - shell:
+- shell:
 #   - [git submodule update --init --recursive, Installing submodules]
-#   command: Run shell script here
-#   stdin: trues
-#   stdout: true
-#   description: Bootstrapping tools
+  -
+    command: ./setup_homebrew.zsh
+    stdin: true
+    stdout: true
+    stderr: true
+    description: Homebrew Setup
