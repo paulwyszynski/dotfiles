@@ -120,6 +120,7 @@ export PATH={$PATH}:/Users/paulwyszynski/Library/Android/sdk/platform-tools:/usr
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/cmdline-tools/latest/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Used for bat tool (alternative to cat, installed via homebrew)
 
 # Alias keybindings
 alias lg='lazygit'
