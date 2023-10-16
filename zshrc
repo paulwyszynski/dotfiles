@@ -125,8 +125,11 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Used for bat tool (alternati
 # Alias keybindings
 alias lg='lazygit'
 alias l='exa -lhUu --git --group-directories-first --icons --no-user'
+alias ld='exa -lhUu --git --group-directories-first --icons --no-user -s=mod -r'
 alias ll='exa -alhUu --git --group-directories-first --icons --no-user'
+alias lld='exa -alhUu --git --group-directories-first --icons --no-user -s=mod -r'
 alias lll='exa -alThUu --git --group-directories-first --icons --level=5 --no-user'
+alias llld='exa -alThUu --git --group-directories-first --icons --level=5 --no-user -s=mod -r'
 alias z='zellij'
 
 # Custom output when you start zsh
