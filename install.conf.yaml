@@ -6,14 +6,16 @@
 
 - create:
     - ~/.config/keyboard/via
+    - ~/Library/Application Support/lazygit
     # - ~/downloads
     # - ~/.vim/undo-history
 
 - link:
-    ~/.ideavimrc: ideavimrc
-    ~/.zshrc: zshrc
-    ~/.gitconfig: gitconfig
-    ~/.config/keyboard/via/keychron_k7_pro_layout.json: keychron_k7_pro_layout.json
+    ~/.ideavimrc: idea-ide/ideavimrc
+    ~/.zshrc: zsh/zshrc
+    ~/.gitconfig: git/gitconfig
+    ~/.config/keyboard/via/keychron_k7_pro_layout.json: qmk-via/keychron_k7_pro_layout.json
+    ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
     # lazygit
     # brew
     # zellij
