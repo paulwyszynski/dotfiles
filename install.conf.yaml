@@ -4,10 +4,16 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.config/keyboard/via
+    # - ~/downloads
+    # - ~/.vim/undo-history
+
 - link:
     ~/.ideavimrc: ideavimrc
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
+    ~/.config/keyboard/via/keychron_k7_pro_layout.json: keychron_k7_pro_layout.json
     # lazygit
     # brew
     # zellij
@@ -21,10 +27,6 @@
     # obsidian
     # nvim (nvchad)
 
-# - create:
-#     - ~/downloads
-#     - ~/.vim/undo-history
-#
 - shell:
 #   - [git submodule update --init --recursive, Installing submodules]
   -
