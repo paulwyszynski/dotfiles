@@ -150,6 +150,11 @@ f() {
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
 
+# Better copy. Creates missing folder when trying to copy with cp.
+bcp() {
+	mkdir -p $(dirname "$2") && cp "$1" "$2"
+}
+
 echo "\n"
 echo "USERNAME:\t"$USERNAME
 echo "HOST:\t\t"$HOST
