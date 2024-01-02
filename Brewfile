@@ -28,6 +28,8 @@ brew "swiftlint"
 brew "tree"
 brew "zellij"
 brew "zsh-syntax-highlighting"
+brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/skhd"
 
 # Casks (Applications)
 cask "brave-browser"
