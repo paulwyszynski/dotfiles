@@ -1,0 +1,58 @@
+# Changing window focus within space
+shift + alt - j : yabai -m window --focus south
+shift + alt - k : yabai -m window --focus north
+shift + alt - h : yabai -m window --focus west
+shift + alt - l : yabai -m window --focus east
+
+# swap managed window
+ctrl + shift + alt - j : yabai -m window --swap south
+ctrl + shift + alt - k : yabai -m window --swap north
+ctrl + shift + alt - h : yabai -m window --swap west
+ctrl + shift + alt - l : yabai -m window --swap east
+
+# Move managed window
+ctrl + cmd + alt - j : yabai -m window --warp south
+ctrl + cmd + alt - k : yabai -m window --warp north
+ctrl + cmd + alt - h : yabai -m window --warp west
+ctrl + cmd + alt - l : yabai -m window --warp east
+
+# Change focus between external displays (left and right)
+shift + alt - left : yabai -m display --focus west
+shift + alt - right : yabai -m display --focus east
+
+# Modifying the layout on current space
+
+# Rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+shift + alt - x : yabai -m space --mirror x-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+# Float / unfloat window and center on screen
+# grid <rows>:<cols>:<start-x>:<start-y>:<width>:<height>
+# This config has 5 cols and the windows is full height and speard over 3 cols and it starts at first col.
+shift + alt - t : yabai -m window --toggle float --grid 1:5:1:0:3:0
+
+# Balance size of windows
+shift + alt - 0 : yabai -m space --balance
+
+# Toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle zoom-fullscreen 
+
+# increase window size
+shift + cmd - a : yabai -m window --resize left:-20:0
+shift + cmd - w : yabai -m window --resize top:0:-20
+
+# decrease window size
+shift + cmd - d : yabai -m window --resize left:20:0
+shift + cmd - s : yabai -m window --resize top:0:20
+
+# send window to space
+ctrl + shift + alt - 1 : yabai -m window --space 1
+ctrl + shift + alt - 2 : yabai -m window --space 2
+ctrl + shift + alt - 3 : yabai -m window --space 3
+ctrl + shift + alt - 4 : yabai -m window --space 4
+ctrl + shift + alt - 5 : yabai -m window --space 5
+
+# Send window to monitor and follow focus
+ctrl + shift + alt - left : yabai -m window --display west; yabai -m display --focus west
+ctrl + shift + alt - right : yabai -m window --display east; yabai -m display --focus east

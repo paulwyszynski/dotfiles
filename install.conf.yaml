@@ -7,6 +7,8 @@
 - create:
     - ~/.config/keyboard/via
     - ~/Library/Application Support/lazygit
+    - ~/.config/yabai
+    - ~/.config/skhd
     # - ~/downloads
     # - ~/.vim/undo-history
 
@@ -16,6 +18,8 @@
     ~/.gitconfig: git/gitconfig
     ~/.config/keyboard/via/keychron_k7_pro_layout.json: qmk-via/keychron_k7_pro_improved_esc_layout.json
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
+    ~/.config/yabai/yabairc: yabai/yabairc
+    ~/.config/skhd/skhdrc: skhd/skhdrc
     # lazygit
     # brew
     # zellij
