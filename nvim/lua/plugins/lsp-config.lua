@@ -20,9 +20,6 @@ return {
       servers = {
         lemminx = {},
         yamlls = {},
-        -- lemminx = function ()
-        --   require("lspconfig").setup()
-        -- end
       },
     },
   },
@@ -43,7 +40,16 @@ return {
     opts = {
       formatters_by_ft = {
         xml = { "xmlformat" },
-        yaml = { "yamlfmt" },
+        yaml = { "yamlfix" },
+      },
+    },
+  },
+  -- LINTER
+  {
+    "mfussenegger/nvim-lint",
+    opts = {
+      linters_by_ft = {
+        yaml = { "yamllint" },
       },
     },
   },
