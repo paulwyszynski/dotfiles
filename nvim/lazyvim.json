@@ -1,6 +1,7 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.yaml"
+    "lazyvim.plugins.extras.editor.symbols-outline",
+    "lazyvim.plugins.extras.lang.markdown"
   ],
   "news": {
     "NEWS.md": "2123"
