@@ -36,3 +36,4 @@ set iskeyword+=-                          -- treats words with `-` as single wor
 set number                                -- set numbered lines
 set relativenumber
 set linebreak=true
+nnoremap <C-A> ggVG
