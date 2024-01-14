@@ -1,9 +1,8 @@
+---
 - defaults:
     link:
       relink: true
-
 - clean: ['~']
-
 - create:
     - ~/.config/keyboard/via
     - ~/Library/Application Support/lazygit
@@ -11,7 +10,6 @@
     - ~/.config/skhd
     # - ~/downloads
     # - ~/.vim/undo-history
-
 - link:
     ~/.ideavimrc: idea-ide/ideavimrc
     ~/.zshrc: zsh/zshrc
@@ -35,12 +33,10 @@
     # sf symbols
     # obsidian
     # nvim (nvchad)
-
 - shell:
-#   - [git submodule update --init --recursive, Installing submodules]
-  -
-    command: ./setup_homebrew.zsh
-    stdin: true
-    stdout: true
-    stderr: true
-    description: Homebrew Setup
+    # - [git submodule update --init --recursive, Installing submodules]
+    - command: ./setup_homebrew.zsh
+      stdin: true
+      stdout: true
+      stderr: true
+      description: Homebrew Setup
