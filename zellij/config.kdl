@@ -230,7 +230,7 @@ keybinds {
                 "go into edit mode"     "ctrl + s + e"
                 "scroll half page up"   "ctrl + s + u"
                 "scroll half page down" "ctrl + s + d"
-                "detach session"        "ctrl + o + w"
+                "detach session"        "ctrl + o + d"
                 "open session manager"  "ctrl + o + w"
                 "quit zellij"           "ctrl + q"
                 "new pane"              "alt + n"
