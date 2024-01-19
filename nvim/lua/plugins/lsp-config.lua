@@ -6,6 +6,7 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "bash-language-server",
         "bash-debug-adapter",
+        "html-lsp",
         "jsonlint",
         "json-lsp",
         "lemminx",
@@ -23,6 +24,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        html = {},
         jsonls = {},
         lemminx = {},
         yamlls = {},
@@ -35,9 +37,7 @@ return {
     opts = function(_, opts)
       -- add more
       vim.list_extend(opts.ensure_installed, {
-        "json",
         "xml",
-        "yaml",
       })
     end,
   },
@@ -46,6 +46,7 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
+        html = { "prettier" },
         json = { "prettier" },
         markdown = { "prettier" },
         xml = { "xmlformat" },
@@ -58,6 +59,7 @@ return {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
+        html = { "markuplint" },
         yaml = { "yamllint" },
       },
     },
