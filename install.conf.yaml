@@ -6,6 +6,8 @@
 - create:
     - ~/.config/keyboard/via
     - ~/Library/Application Support/lazygit
+    - ~/.config/nvim
+    - ~/.config/zellij
     - ~/.config/yabai
     - ~/.config/skhd
     # - ~/downloads
@@ -40,3 +42,4 @@
       stdout: true
       stderr: true
       description: Homebrew Setup
+    # Add command for fzf key bindings and auto completions in /usr/local/opt/fzf -> run install script

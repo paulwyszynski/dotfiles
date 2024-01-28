@@ -118,6 +118,9 @@ export PATH={$PATH}:/Users/paulwyszynski/Library/Android/sdk/platform-tools:/usr
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# FZF: zsh-vi-mode collides with fzf initialization. See https://github.com/jeffreytse/zsh-vi-mode/blob/master/README.md
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
 # export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/cmdline-tools/latest/bin:$PATH"
