@@ -29,3 +29,4 @@ yabai -m rule --add app="^AppCleaner$" manage=off
 yabai -m rule --add app="^Logi Options+$" manage=off
 yabai -m rule --add app="^Telegram$" manage=off
 yabai -m rule --add app="^Simulator$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
