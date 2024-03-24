@@ -135,13 +135,15 @@ alias ll='exa -alhUu --git --group-directories-first --icons --no-user'
 alias lld='exa -alhUu --git --group-directories-first --icons --no-user -s=mod -r'
 alias lll='exa -alThUu --git --group-directories-first --icons --level=5 --no-user'
 alias llld='exa -alThUu --git --group-directories-first --icons --level=5 --no-user -s=mod -r'
-alias z='zellij'
+alias zj='zellij'
 alias tree1='tree -L 1'
 alias tree2='tree -L 2'
 alias tree3='tree -L 3'
 alias tree4='tree -L 4'
 alias tree5='tree -L 5'
 alias tree6='tree -L 6'
+alias cd='z'
+alias cdi='zi'
 
 # Custom output when you start zsh
 # neofetch
@@ -157,6 +159,9 @@ f() {
 bcp() {
 	mkdir -p $(dirname "$2") && cp "$1" "$2"
 }
+
+# zoxide for autocompletions in the terminal
+eval "$(zoxide init zsh)"
 
 echo "\n"
 echo "USERNAME:\t"$USERNAME
