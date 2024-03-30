@@ -1,5 +1,5 @@
 return {
-  -- MASON INSTALLER: LSPS, FORMATTERS, LINTERS --
+  -- NOTE: MASON INSTALLER: LSPS, FORMATTERS, LINTERS AND DEBUGGERS
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -19,7 +19,7 @@ return {
       })
     end,
   },
-  -- LSPCONFIG --
+  -- NOTE: LSPCONFIG
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -31,7 +31,7 @@ return {
       },
     },
   },
-  -- TREESITTER --
+  -- NOTE: TREESITTER
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
@@ -41,7 +41,7 @@ return {
       })
     end,
   },
-  -- FORMATTERS --
+  -- NOTE: FORMATTERS
   {
     "stevearc/conform.nvim",
     opts = {
@@ -54,7 +54,7 @@ return {
       },
     },
   },
-  -- LINTER
+  -- NOTE: LINTER
   {
     "mfussenegger/nvim-lint",
     opts = {
