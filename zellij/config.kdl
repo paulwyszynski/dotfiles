@@ -235,6 +235,8 @@ keybinds {
                 "quit zellij"           "ctrl + q"
                 "new pane"              "alt + n"
                 "navigate panes/tabs"   "alt + h/j/k/l"
+                "next view mode"        "alt + ]"
+                "previous view mode"    "alt + ["
             };
             SwitchToMode "Normal"
         }
