@@ -17,4 +17,5 @@ keymap.set("n", "<C-S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase
 
 -- Better escape
 keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true })
-keymap.set("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true })
+-- Leads to slow scrolling down inside lazygit
+-- keymap.set("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true })
