@@ -37,3 +37,4 @@ set number                                -- set numbered lines
 set relativenumber
 set linebreak=true
 nnoremap <C-A> ggVG
+Plug 'tpope/vim-surround'
