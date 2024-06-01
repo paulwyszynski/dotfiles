@@ -7,6 +7,7 @@ return {
         { name = "luasnip" }, -- For luasnip users.
         { name = "nvim_lsp" },
         { name = "path" }, -- hrsh7th/cmp-path
+        { name = "copilot" },
         -- { name = "ultisnips" }, -- For ultisnips users.
         -- { name = "vsnip" }, -- For vsnip users.
         -- { name = "snippy" }, -- For snippy users.
