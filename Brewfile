@@ -32,6 +32,8 @@ brew "zoxide"
 brew "zsh-syntax-highlighting"
 brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
+brew "tlrc"
+brew "thefuck"
 
 # Casks (Applications)
 cask "brave-browser"

@@ -147,6 +147,7 @@ alias tree5='tree -L 5'
 alias tree6='tree -L 6'
 alias cd='z'
 alias cdi='zi'
+alias c='clear'
 
 # Custom output when you start zsh
 # neofetch
@@ -165,6 +166,9 @@ bcp() {
 
 # zoxide for autocompletions in the terminal
 eval "$(zoxide init zsh)"
+
+# Thefuck for auto-correction
+eval $(thefuck --alias fuck)
 
 echo "\n"
 echo "USERNAME:\t"$USERNAME
