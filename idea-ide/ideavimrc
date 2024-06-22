@@ -36,5 +36,10 @@ set iskeyword+=-                          -- treats words with `-` as single wor
 set number                                -- set numbered lines
 set relativenumber
 set linebreak=true
+set which-key                             -- show keybindings the vim way
+set notimeout                             -- no timeout for which-key
+-- set timeoutlen=5000                    -- set timeout for which-key
 nnoremap <C-A> ggVG
 Plug 'tpope/vim-surround'
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
