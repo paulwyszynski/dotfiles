@@ -1,5 +1,8 @@
+let mapleader= " "
+set idearefactormode=keep                 -- see https://github.com/JetBrains/ideavim/wiki
+set ideajoin                              -- see https://github.com/JetBrains/ideavim/wiki
 set backup=false                          -- creates a backup file
-set clipboard+=unnamedplus                  -- allows neovim to access the system clipboard
+set clipboard+=unnamedplus                -- allows neovim to access the system clipboard
 set cmdheight=1                           -- more space in the neovim command line for displaying messages
 set conceallevel=0                        -- so that `` is visible in markdown files
 set fileencoding="utf-8"                  -- the encoding written to a file
@@ -36,10 +39,11 @@ set iskeyword+=-                          -- treats words with `-` as single wor
 set number                                -- set numbered lines
 set relativenumber
 set linebreak=true
-set which-key                             -- show keybindings the vim way
-set notimeout                             -- no timeout for which-key
--- set timeoutlen=5000                    -- set timeout for which-key
 nnoremap <C-A> ggVG
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
+Plug 'justinmk/vim-sneak'
+Plug 'preservim/nerdtree'
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
