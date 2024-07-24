@@ -4,3 +4,10 @@ dir
 env
 txt
 snakecase
+pwd
+bashrc
+zshrc
+chown
+chgrp
+chmod
+rwx
