@@ -4,3 +4,5 @@
 local opt = vim.opt
 
 opt.conceallevel = 1 -- Used for obsidian.nvim
+opt.textwidth = 140 -- Word wrap at 80 characters
+opt.colorcolumn = "140" -- Highlight column 80
