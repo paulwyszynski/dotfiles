@@ -23,6 +23,7 @@
     ~/.config/zellij: zellij/
     ~/.config/yabai/yabairc: yabai/yabairc
     ~/.config/skhd/skhdrc: skhd/skhdrc
+    ~/.prettierrc.yaml: prettier/prettierrc.yml
     # lazygit
     # brew
     # zellij
