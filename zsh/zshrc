@@ -148,6 +148,7 @@ alias tree6='tree -L 6'
 alias cd='z'
 alias cdi='zi'
 alias c='clear'
+alias vimdiff='nvim -d'
 
 # Custom output when you start zsh
 # neofetch
