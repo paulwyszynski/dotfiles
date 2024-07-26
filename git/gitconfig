@@ -4,12 +4,18 @@
 [core]
 	excludesfile = \"$HOME\"/.gitignore
   pager = delta
-; [difftool "sourcetree"]
-; 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-; 	path = 
-; [mergetool "sourcetree"]
-; 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-; 	trustExitCode = true
+[diff]
+  tool = nvimdiff2
+  colorMoved = default
+[difftool "nvimdiff2"]
+  cmd = nvim -d $LOCAL $REMOTE
+  trustExitCode = false
+[merge]
+  tool = nvimdiff3
+  conflictstyle = diff3
+[mergetool "nvimdiff3"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED -c 'wincmd W' -c 'wincmd J'
+  trustExitCode = false
 [commit]
 	template = \"$HOME\"/.stCommitMsg
 [interactive]
@@ -17,10 +23,6 @@
 [delta]
     navigate = true
     line-numbers = true
-[merge]
-    conflictstyle = diff3
-[diff]
-    colorMoved = default
 [pull]
 	rebase = true
 [fetch]
