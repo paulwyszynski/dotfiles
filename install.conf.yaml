@@ -10,6 +10,7 @@
     - ~/.config/zellij
     - ~/.config/yabai
     - ~/.config/skhd
+    - ~/.config/kitty
     # - ~/downloads
     # - ~/.vim/undo-history
 - link:
@@ -24,6 +25,8 @@
     ~/.config/yabai/yabairc: yabai/yabairc
     ~/.config/skhd/skhdrc: skhd/skhdrc
     ~/.prettierrc.yaml: prettier/prettierrc.yml
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
+    ~/.config/kitty/current-theme.conf: kitty/current-theme.conf
     # lazygit
     # brew
     # zellij

@@ -149,6 +149,7 @@ alias cd='z'
 alias cdi='zi'
 alias c='clear'
 alias vimdiff='nvim -d'
+alias icat='kitten icat'
 
 # Custom output when you start zsh
 # neofetch
