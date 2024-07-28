@@ -172,12 +172,12 @@ eval "$(zoxide init zsh)"
 # Thefuck for auto-correction
 eval $(thefuck --alias fuck)
 
-echo "\n"
-echo "USERNAME:\t"$USERNAME
-echo "HOST:\t\t"$HOST
-echo "DIR:\t\t"$(pwd)
-echo "DATE:\t\t"$(date +%d.%m.%y) 
-echo "UPTIME:\t\t"$(uptime)
-echo "\n"
-echo "Your ZSH config has been loaded. Have a nice day!"
-echo "\n"
+# echo "\n"
+# echo "USERNAME:\t"$USERNAME
+# echo "HOST:\t\t"$HOST
+# echo "DIR:\t\t"$(pwd)
+# echo "DATE:\t\t"$(date +%d.%m.%y) 
+# echo "UPTIME:\t\t"$(uptime)
+# echo "\n"
+# echo "Your ZSH config has been loaded. Have a nice day!"
+# echo "\n"
