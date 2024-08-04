@@ -128,6 +128,7 @@ export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Used for bat tool (alternative to cat, installed via homebrew)
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home"
 export EDITOR="/usr/local/bin/nvim"
+export DYLD_LIBRARY_PATH="$(brew --prefix)/lib"
 
 # Alias keybindings
 alias vim='nvim'
