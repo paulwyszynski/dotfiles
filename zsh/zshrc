@@ -82,6 +82,9 @@ plugins=(
   zsh-vi-mode
 )
 
+# Brew shell completions
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
