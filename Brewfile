@@ -38,6 +38,7 @@ brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
 brew "tlrc"
 brew "thefuck"
+brew "glow"
 
 # Casks (Applications)
 cask "brave-browser"
