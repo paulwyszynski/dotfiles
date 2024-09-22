@@ -1,5 +1,5 @@
 return {
-  "MeanderingProgrammer/markdown.nvim",
+  "MeanderingProgrammer/render-markdown.nvim",
   main = "render-markdown",
   opts = {
     heading = {
