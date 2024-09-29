@@ -22,6 +22,7 @@ return {
         enabled = true,
       },
       max_width_window_percentage = 50,
+      tmux_show_only_in_active_window = true,
     },
   },
 }
