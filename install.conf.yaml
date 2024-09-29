@@ -29,6 +29,7 @@
     ~/.config/kitty/current-theme.conf: kitty/current-theme.conf
     ~/.config/kitty/startup.conf: kitty/startup.conf
     ~/.aerospace.toml: aerospace/aerospace.toml
+    ~/.tmux.conf: tmux/tmux.conf
     # lazygit
     # brew
     # zellij

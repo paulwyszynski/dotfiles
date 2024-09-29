@@ -39,6 +39,7 @@ brew "koekeishiya/formulae/skhd"
 brew "tlrc"
 brew "thefuck"
 brew "glow"
+brew "tmux"
 
 # Casks (Applications)
 cask "brave-browser"
