@@ -20,3 +20,5 @@ MD013
 init
 lua
 Cmd
+TMUX
+cheatsheet
