@@ -165,3 +165,10 @@ alt-tab = [
   'focus-monitor --wrap-around next',
   'mode main',
 ]
+
+# Force floating layout for specific app
+# To get app id run: aerospace list-apps
+# https://nikitabobko.github.io/AeroSpace/goodness#popular-apps-ids
+[[on-window-detected]]
+if.app-id = 'com.apple.iphonesimulator'
+run = 'layout floating'
