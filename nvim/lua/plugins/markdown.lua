@@ -36,6 +36,130 @@ return {
         "RenderMarkdownH6",
       },
     },
+    link = {
+      custom = {
+        neovim = {
+          pattern = "neovim[%w%p]*.io",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        stackoverflow = {
+          pattern = "stackoverflow[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        stackexchange = {
+          pattern = "stackexchange[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        reddit = {
+          pattern = "reddit[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        github = {
+          pattern = "github[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        google_us = {
+          pattern = "google[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        google_de = {
+          pattern = "google[%w%p]*.de",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        youtube = {
+          pattern = "youtube[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        facebook = {
+          pattern = "facebook[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        twitter = {
+          pattern = "twitter[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        x = {
+          pattern = "x[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        instagram = {
+          pattern = "instagram[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        amazon_us = {
+          pattern = "amazon[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        amazon_uk = {
+          pattern = "amazon[%w%p]*.co.uk",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        amazon_de = {
+          pattern = "amazon[%w%p]*.de",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        android = {
+          pattern = "android[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        apple = {
+          pattern = "apple[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        kotlin = {
+          pattern = "kotlinlang[%w%p]*.org",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        swift = {
+          pattern = "swift[%w%p]*.org",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        material = {
+          pattern = "material[%w%p]*.io",
+          icon = "󰦆 ",
+          highlight = "RenderMarkdownLink",
+        },
+        gnu = {
+          pattern = "gnu[%w%p]*.org",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        medium = {
+          pattern = "medium[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        linkedin = {
+          pattern = "linkedin[%w%p]*.com",
+          icon = "󰌻 ",
+          highlight = "RenderMarkdownLink",
+        },
+        xing = {
+          pattern = "xing[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+      },
+    },
   },
   -- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
   dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" }, -- if you use standalone mini plugins
