@@ -168,6 +168,16 @@ return {
           icon = " ",
           highlight = "RenderMarkdownLink",
         },
+        tmuxcheatsheet = {
+          pattern = "tmuxcheatsheet[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
+        openbsd = {
+          pattern = "man.openbsd[%w%p]*.org",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
       },
     },
   },
