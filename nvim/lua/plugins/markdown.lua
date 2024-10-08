@@ -43,6 +43,11 @@ return {
           icon = " ",
           highlight = "RenderMarkdownLink",
         },
+        wikipedia = {
+          pattern = "wikipedia[%w%p]*.org",
+          icon = "󰖬 ",
+          highlight = "RenderMarkdownLink",
+        },
         stackoverflow = {
           pattern = "stackoverflow[%w%p]*.com",
           icon = " ",
