@@ -118,6 +118,11 @@ return {
           icon = " ",
           highlight = "RenderMarkdownLink",
         },
+        amazon_eu_short_url = {
+          pattern = "amzn[%w%p]*.eu",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
         android = {
           pattern = "android[%w%p]*.com",
           icon = " ",
