@@ -11,6 +11,7 @@
     - ~/.config/yabai
     - ~/.config/skhd
     - ~/.config/kitty
+    - ~/.config/yazi
     # - ~/downloads
     # - ~/.vim/undo-history
 - link:
@@ -30,6 +31,8 @@
     ~/.config/kitty/startup.conf: kitty/startup.conf
     ~/.aerospace.toml: aerospace/aerospace.toml
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.config/yazi/yazi.toml: yazi/yazi.toml
+    ~/.config/yazi/theme.toml: yazi/theme.toml
     # lazygit
     # brew
     # zellij
