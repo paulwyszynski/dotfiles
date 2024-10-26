@@ -182,6 +182,10 @@ bcp() {
 	mkdir -p $(dirname "$2") && cp "$1" "$2"
 }
 
+compresspdf() {
+  gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dPDFSETTINGS=/${3:-"ebook"} -dCompatibilityLevel=1.4 -sOutputFile="$2" "$1"
+}
+
 # zoxide for autocompletions in the terminal
 eval "$(zoxide init zsh)"
 
