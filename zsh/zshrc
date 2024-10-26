@@ -165,6 +165,18 @@ f() {
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
 
+# Shell wrapper for yazi https://yazi-rs.github.io/docs/quick-start
+# We suggest using this y shell wrapper that provides the abiility to change
+# the current working directory when exiting yazi.
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Better copy. Creates missing folder when trying to copy with cp.
 bcp() {
 	mkdir -p $(dirname "$2") && cp "$1" "$2"
