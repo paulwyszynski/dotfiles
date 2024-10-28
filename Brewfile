@@ -50,6 +50,7 @@ brew "ripgrep"
 brew "fzf"
 brew "zoxide"
 brew "imagemagick"
+brew "spicetify-cli"
 
 # Casks (Applications)
 cask "brave-browser"

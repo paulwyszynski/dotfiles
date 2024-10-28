@@ -54,3 +54,4 @@
       description: Homebrew Setup
     # Add command for fzf key bindings and auto completions in /usr/local/opt/fzf -> run install script
     # Add command for installing yazi catppuccin theme: ya pack -a yazi-rs/flavors:catppuccin-macchiato
+    # Add command for running spicetify-cli to add config.ini to ~/.config/spicetify/ folder
