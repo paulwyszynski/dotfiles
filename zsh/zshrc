@@ -193,6 +193,11 @@ compresspdf() {
   gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dPDFSETTINGS=/${3:-"ebook"} -dCompatibilityLevel=1.4 -sOutputFile="$2" "$1"
 }
 
+# Create directory and cd into it
+mkcd() {
+  mkdir -p "$1" && cd "$1"
+}
+
 # zoxide for autocompletions in the terminal
 eval "$(zoxide init zsh)"
 
