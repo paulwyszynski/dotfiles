@@ -46,6 +46,7 @@ brew "jq"
 brew "poppler"
 brew "imagemagick"
 brew "spicetify-cli"
+brew "pandoc"
 
 # Casks (Applications)
 cask "brave-browser"
@@ -63,3 +64,4 @@ cask "kitty"
 cask "postman"
 cask "rectangle"
 cask "nikitabobko/tap/aerospace"
+cask "basictex"
