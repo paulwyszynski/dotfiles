@@ -33,6 +33,6 @@ l: https://dict.leo.org/german-english/%s Leo Dictionary
 ## Advanced Options
 
 - Scroll step size: 60px
-- Characters used for link hints: sadfjklewcmpgh
+- Characters used for link hints: `sadfjklewcmpgh`
 - Miscellaneous options: Use smooth scrolling
 - Default search engine: `https://www.google.com/search?q`
