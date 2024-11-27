@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.andrew.gettingstarted.externaltrigger</string>
+	<key>connections</key>
+	<dict>
+		<key>2F0CF473-9DE1-42A8-B20E-AC72335D42AE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32894D65-30FB-45D0-A95B-74CBFC72BAC4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4925AC44-85C3-4AF3-A6E9-672AB47607C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1E0C2D8D-CC82-4F82-A3E9-3DFA012800E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5303D5C4-8D9C-46A6-8C7B-2527FB20C33C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>27254BD9-2473-46AD-BA81-E0962F253A10</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A2A93A20-62A2-4258-8064-0ABD8A306143</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4925AC44-85C3-4AF3-A6E9-672AB47607C9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FCFD815B-7191-467C-A87D-0221C1CDEDFB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5303D5C4-8D9C-46A6-8C7B-2527FB20C33C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andrew Pepperrell</string>
+	<key>description</key>
+	<string>Advanced workflow connection stream techniques using external triggers</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Call External Trigger - Getting Started</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>functionA</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>27254BD9-2473-46AD-BA81-E0962F253A10</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>etrigger</string>
+				<key>subtext</key>
+				<string>passing '{query}' as the argument</string>
+				<key>text</key>
+				<string>Run external trigger function</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FCFD815B-7191-467C-A87D-0221C1CDEDFB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>callback</key>
+					<string>callbackA</string>
+					<key>fruit</key>
+					<string>apple</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>5303D5C4-8D9C-46A6-8C7B-2527FB20C33C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>{var:callback}</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>1E0C2D8D-CC82-4F82-A3E9-3DFA012800E1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>functionA</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>A2A93A20-62A2-4258-8064-0ABD8A306143</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>vegetable</key>
+					<string>carrot</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4925AC44-85C3-4AF3-A6E9-672AB47607C9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>callbackA</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>2F0CF473-9DE1-42A8-B20E-AC72335D42AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Variable 'fruit' is '{var:fruit}', 'vegetable' is '{var:vegetable}'</string>
+				<key>title</key>
+				<string>Argument is '{query}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>32894D65-30FB-45D0-A95B-74CBFC72BAC4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Alfred 3.1 adds the ability to call a workflow External Trigger directly using the "Call External Trigger" output object.
+
+This has several advantages over the previous way of calling an external trigger using AppleScript.
+
+1. By not using AppleScript, there is no external dependency on the Alfred app name or version.
+
+2. Call External Trigger can be configured to call an external trigger on 'self', meaning no dependency on the current workflow bundle id.
+
+3. Not only can the input argument be passed through to the external trigger, but also all of the current stream variables.
+
+4. Significantly higher performance, as these calls are made internally and directly as per any other workflow stream connection.
+
+This workflow example demonstrates how the Call External Trigger output object could be used to simulate a function / callback.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1E0C2D8D-CC82-4F82-A3E9-3DFA012800E1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>...And then calling back the passed in variable 'callback', which in this case will call 'Callback A'</string>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>27254BD9-2473-46AD-BA81-E0962F253A10</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>Using 'self' for the workflow bundle id will always call this workflow</string>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>2F0CF473-9DE1-42A8-B20E-AC72335D42AE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>The original query, and all collected variables are still set in this stream</string>
+			<key>xpos</key>
+			<integer>110</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
+		<key>32894D65-30FB-45D0-A95B-74CBFC72BAC4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>Post the original query, and the fruit and vegetable variables we have set</string>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
+		<key>4925AC44-85C3-4AF3-A6E9-672AB47607C9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>...Doing some processing, in this case, add a variable...</string>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
+		<key>5303D5C4-8D9C-46A6-8C7B-2527FB20C33C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>Add a few variables, including 'callback' as 'CallbackA'</string>
+			<key>xpos</key>
+			<integer>230</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
+		<key>A2A93A20-62A2-4258-8064-0ABD8A306143</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>We are simulating a function / callback by calling an external trigger...</string>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>FCFD815B-7191-467C-A87D-0221C1CDEDFB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>The argument will be passed all the way to the Post Notification output</string>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string></string>
+	<key>webaddress</key>
+	<string>https://www.alfredapp.com</string>
+</dict>
+</plist>

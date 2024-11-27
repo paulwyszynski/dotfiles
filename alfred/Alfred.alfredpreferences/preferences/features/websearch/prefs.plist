@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>041356C2-95B6-4CCA-BA21-441DDB0CB094</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>kt</string>
+			<key>text</key>
+			<string>Kotlinlang</string>
+			<key>url</key>
+			<string>https://kotlinlang.org/docs/home.html?q={query}&amp;s=full</string>
+		</dict>
+		<key>5406524F-15F1-460F-9988-CAB83496FF35</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>appledoc</string>
+			<key>text</key>
+			<string>Search Apple Documentation for '{query}'</string>
+			<key>url</key>
+			<string>https://developer.apple.com/search/?q={query}</string>
+		</dict>
+		<key>6C8E9EFB-BABE-49F1-8620-2FC6E2A0BA3E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>androiddoc</string>
+			<key>text</key>
+			<string>Search Android Documentation for '{query}'</string>
+			<key>url</key>
+			<string>https://developer.android.com/s/results?q={query}</string>
+		</dict>
+		<key>C3B45A2B-C604-4A3E-847A-A322008F77F5</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dw</string>
+			<key>text</key>
+			<string>Search Donny Wals for '{query}'</string>
+			<key>url</key>
+			<string>https://www.donnywals.com/?s={query}</string>
+		</dict>
+		<key>C5B0F6B0-F420-4A39-A6D9-3214DB6FFF2E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>stack</string>
+			<key>text</key>
+			<string>Search Stackoverflow for '{query}'</string>
+			<key>url</key>
+			<string>https://stackoverflow.com/search?q={query}</string>
+		</dict>
+		<key>D93B1E85-1945-490A-8ACC-6E60B22AA533</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>leo</string>
+			<key>text</key>
+			<string>Search Leo for '{query}'</string>
+			<key>url</key>
+			<string>https://dict.leo.org/german-english/{query}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>favourites</key>
+	<array>
+		<string>Keyword</string>
+		<string>Browse in Alfred</string>
+		<string>Arg and Vars</string>
+		<string>Open URL</string>
+		<string>File Filter</string>
+		<string>Action in Alfred</string>
+		<string>Post Notification</string>
+		<string>Launch Apps / Files</string>
+		<string>Run Script</string>
+		<string>Open File</string>
+		<string>Run NSAppleScript</string>
+		<string>Conditional</string>
+		<string>Hotkey</string>
+	</array>
+</dict>
+</plist>

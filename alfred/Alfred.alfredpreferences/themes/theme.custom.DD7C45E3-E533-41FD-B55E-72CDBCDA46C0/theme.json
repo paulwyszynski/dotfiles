@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#00F900FF",
+        "font" : "Courier",
+        "color" : "#00F900FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#00F900FF",
+        "font" : "System",
+        "color" : "#00F900FF"
+      },
+      "backgroundSelected" : "#5E5E5EBF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#00F900FF",
+        "font" : "Courier",
+        "color" : "#00F900FF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "roundness" : 0,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#C0C0C087",
+      "paddingHorizontal" : 8,
+      "spacing" : 0,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Courier",
+        "color" : "#00F900FF"
+      },
+      "background" : "#C0C0C000",
+      "roundness" : 0,
+      "paddingVertical" : 8
+    },
+    "window" : {
+      "color" : "#4242427F",
+      "paddingHorizontal" : 0,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#5E5E5E00",
+      "blur" : 15,
+      "roundness" : 3,
+      "paddingVertical" : 0
+    },
+    "credit" : "Paul Wyszynski",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#561A72FF",
+      "thickness" : 0
+    },
+    "name" : "Paul's Theme"
+  }
+}
