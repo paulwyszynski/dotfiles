@@ -11,7 +11,7 @@ tap "yonaskolb/beak", "https://github.com/yonaskolb/Beak.git"
 
 ### Brews (Packages/Formulae) ###
 
-brew "bat"
+brew "bat" # Install bat-extras as well
 brew "btop"
 brew "bundletool"
 brew "cmatrix"
@@ -81,9 +81,9 @@ brew "zsh-vi-mode"
 
 ### Casks (Applications) ###
 
-cask "android-file-transfer"
 cask "aerospace"
 cask "alfred"
+cask "android-file-transfer"
 cask "android-studio"
 cask "appcleaner"
 cask "basictex"
@@ -92,12 +92,16 @@ cask "font-hack-nerd-font"
 cask "gimp"
 cask "kitty"
 cask "logi-options+"
+cask "mas"
 cask "obsidian"
 cask "proxyman"
 cask "rectangle"
+cask "signal"
 cask "silicon-info"
+cask "telegram"
 cask "via"
 cask "vlc"
+cask "whatsapp"
 cask "zen-browser"
 
 ### Not used at the moment ###
@@ -109,3 +113,9 @@ cask "zen-browser"
 # cask "fork"
 # cask "google-drive"
 # cask "postman"
+
+# Mac App Store command line interface
+mas "Apple Developer", id: 640199958
+mas "AusweisApp Bund", id: 948660805
+mas "Swift Playgrounds", id: 1496833156
+mas "Xcode", id: 497799835
