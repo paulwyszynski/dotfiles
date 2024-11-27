@@ -7,13 +7,15 @@
     - ~/.config/keyboard/via
     - ~/Library/Application Support/lazygit
     - ~/.config/nvim
-    - ~/.config/zellij
-    - ~/.config/yabai
-    - ~/.config/skhd
     - ~/.config/kitty
     - ~/.config/yazi
     # - ~/downloads
     # - ~/.vim/undo-history
+
+    ### Not used at the moment  ###
+    # - ~/.config/zellij
+    # - ~/.config/yabai
+    # - ~/.config/skhd
 - link:
     ~/.ideavimrc: idea-ide/ideavimrc
     ~/.zshrc: zsh/zshrc
@@ -22,9 +24,6 @@
     ~/.config/keyboard/via/keychron_k7_pro_layout.json: qmk-via/keychron_k7_pro_improved_esc_layout.json
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
     ~/.config/nvim: nvim/
-    ~/.config/zellij: zellij/
-    ~/.config/yabai/yabairc: yabai/yabairc
-    ~/.config/skhd/skhdrc: skhd/skhdrc
     ~/.prettierrc.yaml: prettier/prettierrc.yml
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/kitty/current-theme.conf: kitty/current-theme.conf
@@ -35,23 +34,38 @@
     ~/.config/yazi/theme.toml: yazi/theme.toml
     # lazygit
     # brew
-    # zellij
-    # fork
+    # zellij -> replaced with tmux
+    # fork -> replaced with lazygit (checkout git butler)
     # alfred
-    # amethyst
+    # yabai -> replaced with aerospace
+    # amethyst -> replaced with aerospace
     # appcleaner
-    # android studio settings
-    # xcode settings
+    # android studio
+    # nerdfonts
+    # xcode
     # sf symbols
     # obsidian
-    # nvim (nvchad)
+    # rectangle
+    # zen-browser
+    # logi-options+
+    # spicetify-cli
+    # postman -> for now using httpie
+    # Install oh-my-posh instead of oh-my-zsh
+
+    ### Not used at the moment  ###
+
+    # ~/.config/zellij: zellij/
+    # ~/.config/yabai/yabairc: yabai/yabairc
+    # ~/.config/skhd/skhdrc: skhd/skhdrc
 - shell:
     # - [git submodule update --init --recursive, Installing submodules]
-    - command: ./setup_homebrew.zsh
+    - command: ./setup_homebrew.sh
       stdin: true
       stdout: true
       stderr: true
       description: Homebrew Setup
     # Add command for fzf key bindings and auto completions in /usr/local/opt/fzf -> run install script
+    # Add command for tmux
     # Add command for installing yazi catppuccin theme: ya pack -a yazi-rs/flavors:catppuccin-macchiato
     # Add command for running spicetify-cli to add config.ini to ~/.config/spicetify/ folder
+    # Add command for running homebrew with the specified brew file
