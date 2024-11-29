@@ -9,6 +9,7 @@
     - ~/.config/nvim
     - ~/.config/kitty
     - ~/.config/yazi
+    - ~/.config/bat
     # - ~/downloads
     # - ~/.vim/undo-history
 
@@ -19,6 +20,7 @@
 - link:
     ~/.ideavimrc: idea-ide/ideavimrc
     ~/.zshrc: zsh/zshrc
+    ~/.zshenv: zsh/zshenv
     ~/.oh-my-zsh: oh-my-zsh/
     ~/.gitconfig: git/gitconfig
     ~/.config/keyboard/via/keychron_k7_pro_layout.json: qmk-via/keychron_k7_pro_improved_esc_layout.json
@@ -32,6 +34,7 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/yazi/yazi.toml: yazi/yazi.toml
     ~/.config/yazi/theme.toml: yazi/theme.toml
+    ~/.config/bat/config: bat/config
     # lazygit
     # brew
     # zellij -> replaced with tmux
