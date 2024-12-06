@@ -33,8 +33,8 @@
     ~/.aerospace.toml: aerospace/aerospace.toml
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/yazi/yazi.toml: yazi/yazi.toml
-    ~/.config/yazi/theme.toml: yazi/theme.toml
-    ~/.config/bat/config: bat/config
+    ~/.config/yazi/theme.toml: yazi/theme.toml  # Add ya pack -a yazi-rs/flavors:catppuccin-macchiato to install catppuccin theme
+    ~/.config/bat.conf: bat/bat.conf
     # lazygit
     # brew
     # zellij -> replaced with tmux
