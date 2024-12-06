@@ -1,6 +1,6 @@
 [user]
 	name = Paul Wyszynski
-	email = paul.wyszynski@jamitlabs.com
+	email = paul.wyszynski@gmail.com
 [core]
 	excludesfile = \"$HOME\"/.gitignore
   pager = delta
