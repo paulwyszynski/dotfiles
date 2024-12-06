@@ -69,9 +69,6 @@ brew "wget"
 brew "yazi"
 brew "zoxide"
 brew "zsh"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "zsh-vi-mode"
 
 ### Not used at the moment ####
 
@@ -80,6 +77,12 @@ brew "zsh-vi-mode"
 # brew "koekeishiya/formulae/yabai"
 # brew "spotify-tui"
 # brew "zellij"
+
+### Zsh plugins are loaded via zinit ###
+
+# brew "zsh-autosuggestions"
+# brew "zsh-syntax-highlighting"
+# brew "zsh-vi-mode"
 
 ### Casks (Applications) ###
 
