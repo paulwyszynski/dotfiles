@@ -8,7 +8,7 @@ return {
     workspaces = {
       {
         name = "Paulaner",
-        path = "~/Dev/Git/obsidian/Paulaner",
+        path = "~/Dev/Git/SecondBrain/obsidian/Paulaner",
       },
     },
     -- Optional, completion of wiki links, local markdown links, and tags using nvim-cmp.
