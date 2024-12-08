@@ -2,12 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps her
 
--- Delete default LazyVim navigation
 local keymap = vim.keymap
-keymap.del("n", "<C-Up>")
-keymap.del("n", "<C-Down>")
-keymap.del("n", "<C-Left>")
-keymap.del("n", "<C-Right>")
 
 -- Change navigation on Mac
 keymap.set("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
