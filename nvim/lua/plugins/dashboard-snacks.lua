@@ -1,6 +1,10 @@
 -- if true then
 --   return {}
 -- end
+local obsidian_vault_path = os.getenv("OBSIDIAN_VAULT")
+local live_grep_command = string.format(":Telescope live_grep cwd=%s hidden=false", obsidian_vault_path)
+local find_files_command = string.format(":Telescope find_files cwd=%s hidden=false", obsidian_vault_path)
+
 return {
   "folke/snacks.nvim",
   opts = {
@@ -30,14 +34,14 @@ return {
             icon = " ",
             key = "1",
             desc = "Find Text in Vault",
-            action = ":Telescope live_grep cwd=~/Dev/Git/obsidian/Paulaner hidden=false",
+            action = live_grep_command,
           },
           {
 
             icon = " ",
             key = "2",
             desc = "Find File in Vault",
-            action = ":Telescope find_files cwd=~/Dev/Git/obsidian/Paulaner hidden=false",
+            action = find_files_command,
           },
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
