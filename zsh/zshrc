@@ -121,6 +121,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
 --color=selected-bg:#494d64 \
 --multi"
+export NULLCMD=bat
 export OBSIDIAN_VAULT="$HOME/Dev/Git/SecondBrain/obsidian/Paulaner/"
 
 ### Aliases
@@ -144,6 +145,7 @@ alias cdi='__zoxide_zi'
 alias c='clear'
 alias vimdiff='nvim -d'
 alias icat='kitten icat'
+alias printenvs='<<<${(F)path}'
 
 ### Shell integrations
 eval "$(fzf --zsh)"
