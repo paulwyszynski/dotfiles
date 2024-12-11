@@ -6,9 +6,7 @@
 # export HOMEBREW_CASK_OPTS="--no-quarantine"
 # https://github.com/homebrew/homebrew-bundle/issues/474
 
-exists() {
-  command -v "$1" >/dev/null 2>&1
-}
+source ~/.bashrc
 
 printf "\n<<< Starting Homebrew Setup >>>\n"
 
