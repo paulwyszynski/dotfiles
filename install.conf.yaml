@@ -61,12 +61,16 @@
     # ~/.config/yabai/yabairc: yabai/yabairc
     # ~/.config/skhd/skhdrc: skhd/skhdrc
 - shell:
-    # - [git submodule update --init --recursive, Installing submodules]
     - command: ./setup_homebrew.sh
       stdin: true
       stdout: true
       stderr: true
       description: Homebrew Setup
+    - command: ./setup_zsh.sh
+      stdin: true
+      stdout: true
+      stderr: true
+      description: Zsh Setup
     # Add command for fzf key bindings and auto completions in /usr/local/opt/fzf -> run install script
     # Add command for tmux
     # Add command for installing yazi catppuccin theme: ya pack -a yazi-rs/flavors:catppuccin-macchiato
