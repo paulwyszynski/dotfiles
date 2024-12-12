@@ -9,9 +9,12 @@ return {
         "html-lsp",
         "jsonlint",
         "json-lsp",
+        "markuplint",
         "lemminx",
         "prettier",
         "shellcheck",
+        "stylelint",
+        "stylelint-lsp",
         "xmlformatter",
         "yaml-language-server",
         "yamllint",
@@ -30,6 +33,9 @@ return {
         html = {},
         jsonls = {},
         lemminx = {},
+        stylelint_lsp = {
+          filetypes = { "css", "scss", "less" },
+        },
         yamlls = {},
       },
     },
@@ -40,6 +46,7 @@ return {
     opts = function(_, opts)
       -- add more
       vim.list_extend(opts.ensure_installed, {
+        "css",
         "xml",
       })
     end,
@@ -49,6 +56,7 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
+        css = { "prettier" },
         html = { "prettier" },
         json = { "prettier" },
         markdown = { "prettier" },
@@ -62,6 +70,7 @@ return {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
+        css = { "stylelint" },
         html = { "markuplint" },
         yaml = { "yamllint" },
       },
