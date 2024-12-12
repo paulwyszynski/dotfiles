@@ -102,27 +102,39 @@ mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
+### Path extended
+typeset -U path # Remove duplicates from path array. Lowercase path is an array. Uppercase PATH is a scalar.
+path=(
+  $path
+  "/Users/paule/Library/Android/sdk/platform-tools"
+  "/usr/bin"
+  "/bin"
+  "/usr/sbin"
+  "/sbin"
+  "/usr/local/bin"
+  "/opt/homebrew/bin"
+  "/Users/paule/.spicetify"
+  "/usr/local/opt/ruby/bin"
+  "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
+  "/usr/local/opt/openjdk@17/bin"
+  "/Library/TeX/texbin"
+)
+
 ### Exports
-export PATH=$PATH:/Users/paule/Library/Android/sdk/platform-tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin
-export PATH=$PATH:/Users/paule/.spicetify
 export HOMEBREW_CASK_OPTS="--no-quarantine"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/Library/Android/sdk/cmdline-tools/latest/bin:$PATH"
-export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
-export PATH="/Library/TeX/texbin:$PATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Used for bat tool (alternative to cat, installed via homebrew)
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home"
 export EDITOR="/opt/homebrew/bin/nvim"
 export DYLD_FALLBACK_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_FALLBACK_LIBRARY_PATH"
 export BAT_THEME="Catppuccin Macchiato"
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
---color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
---color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
---color=selected-bg:#494d64 \
---multi"
 export NULLCMD=bat
 export OBSIDIAN_VAULT="$HOME/Dev/Git/SecondBrain/obsidian/Paulaner/"
+export FZF_DEFAULT_OPTS=" \
+  --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
+  --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+  --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
+  --color=selected-bg:#494d64 \
+  --multi"
 
 ### Aliases
 alias ls='ls --color'
