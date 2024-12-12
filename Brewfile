@@ -1,7 +1,6 @@
 ### Taps ###
 
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
@@ -11,7 +10,8 @@ tap "yonaskolb/beak", "https://github.com/yonaskolb/Beak.git"
 
 ### Brews (Packages/Formulae) ###
 
-brew "bat" # Install bat-extras as well
+brew "bat"
+brew "bat-extras"
 brew "btop"
 brew "bundletool"
 brew "cmatrix"
@@ -120,7 +120,8 @@ cask "zen-browser"
 # cask "postman"
 
 # Mac App Store command line interface
-mas "Apple Developer", id: 640199958
-mas "AusweisApp Bund", id: 948660805
-mas "Swift Playgrounds", id: 1496833156
+mas "AusweisApp", id: 948660805
+mas "Developer", id: 640199958
+mas "Messenger", id: 1480068668
+mas "Playgrounds", id: 1496833156
 mas "Xcode", id: 497799835
