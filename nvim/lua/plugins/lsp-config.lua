@@ -6,6 +6,7 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "bash-language-server",
         "bash-debug-adapter",
+        "css-lsp",
         "html-lsp",
         "jsonlint",
         "json-lsp",
@@ -33,7 +34,7 @@ return {
         html = {},
         jsonls = {},
         lemminx = {},
-        stylelint_lsp = {
+        cssls = {
           filetypes = { "css", "scss", "less" },
         },
         yamlls = {},
