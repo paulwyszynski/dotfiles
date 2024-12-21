@@ -102,6 +102,15 @@ mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
+### Github Copilot CLI
+ghc() {
+  if exists gh; then
+    gh copilot explain "$1"
+  else
+    echo "\ngh is not installed. Please install it via Homebrew. Make sure GH Copilot CLI is setup.\n"
+  fi
+}
+
 ### Path extended
 typeset -U path # Remove duplicates from path array. Lowercase path is an array. Uppercase PATH is a scalar.
 path=(
