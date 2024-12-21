@@ -1,6 +1,3 @@
--- if true then
---   return {}
--- end
 local obsidian_vault_path = os.getenv("OBSIDIAN_VAULT")
 local live_grep_command = string.format(":Telescope live_grep cwd=%s hidden=false", obsidian_vault_path)
 local find_files_command = string.format(":Telescope find_files cwd=%s hidden=false", obsidian_vault_path)
