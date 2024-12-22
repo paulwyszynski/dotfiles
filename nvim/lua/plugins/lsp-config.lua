@@ -15,7 +15,6 @@ return {
         "prettier",
         "shellcheck",
         "stylelint",
-        "stylelint-lsp",
         "xmlformatter",
         "yaml-language-server",
         "yamllint",
@@ -34,9 +33,7 @@ return {
         html = {},
         jsonls = {},
         lemminx = {},
-        cssls = {
-          filetypes = { "css", "scss", "less" },
-        },
+        cssls = {},
         yamlls = {},
       },
     },
@@ -48,7 +45,6 @@ return {
       -- add more
       vim.list_extend(opts.ensure_installed, {
         "css",
-        "xml",
       })
     end,
   },
