@@ -1,6 +1,7 @@
 local obsidian_vault_path = os.getenv("OBSIDIAN_VAULT")
-local live_grep_command = string.format(":Telescope live_grep cwd=%s hidden=false", obsidian_vault_path)
-local find_files_command = string.format(":Telescope find_files cwd=%s hidden=false", obsidian_vault_path)
+local live_grep_command = string.format(":lua require'fzf-lua'.live_grep({ cwd = '%s' })", obsidian_vault_path)
+local find_files_command =
+  string.format(":lua require'fzf-lua'.files({ cmd = 'rg --files', cwd = '%s' })", obsidian_vault_path)
 
 return {
   "folke/snacks.nvim",

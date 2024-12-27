@@ -4,14 +4,9 @@
 
 local keymap = vim.keymap
 local obsidian_vault_path = os.getenv("OBSIDIAN_VAULT")
-local live_grep_command = string.format(
-  "<cmd>lua require('telescope.builtin').live_grep({ hidden = false, search_dirs = { '%s' } })<cr>",
-  obsidian_vault_path
-)
-local find_files_command = string.format(
-  "<cmd>lua require('telescope.builtin').find_files({ hidden = false, search_dirs = { '%s' } })<cr>",
-  obsidian_vault_path
-)
+local live_grep_command = string.format("<cmd>lua require'fzf-lua'.live_grep({ cwd = '%s' })<cr>", obsidian_vault_path)
+local find_files_command =
+  string.format("<cmd>lua require'fzf-lua'.files({ cmd = 'rg --files', cwd = '%s' })<cr>", obsidian_vault_path)
 
 -- Change navigation on Mac
 keymap.set("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
