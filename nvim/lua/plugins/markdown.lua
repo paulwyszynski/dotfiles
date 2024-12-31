@@ -36,6 +36,12 @@ return {
         "RenderMarkdownH6",
       },
     },
+    html = {
+      comment = {
+        -- Turn on / off HTML comment concealing
+        conceal = false,
+      },
+    },
     link = {
       custom = {
         neovim = {
