@@ -144,7 +144,8 @@ export FZF_DEFAULT_OPTS=" \
   --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
   --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
   --color=selected-bg:#494d64 \
-  --multi"
+  --multi \
+  --height 50%"
 # For compilers to find curl you may need to set:
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/curl/lib"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
