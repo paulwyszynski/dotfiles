@@ -6,6 +6,7 @@ tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "mono0926/license-plist"
 tap "nikitabobko/tap"
+tap "xcodesorg/made"
 tap "yonaskolb/beak", "https://github.com/yonaskolb/Beak.git"
 
 ### Brews (Packages/Formulae) ###
@@ -70,6 +71,7 @@ brew "tree"
 brew "webp"
 brew "wget"
 brew "yazi"
+brew "xcodesorg/made/xcodes"
 brew "zoxide"
 brew "zsh"
 
@@ -110,6 +112,7 @@ cask "telegram"
 cask "via"
 cask "vlc"
 cask "whatsapp"
+cask "xcodes"
 cask "zen-browser"
 
 ### Not used at the moment ###
