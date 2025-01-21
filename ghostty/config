@@ -1,0 +1,18 @@
+term = xterm-ghostty
+font-family = JetBrainsMono NFM Regular
+font-size = 15
+font-thicken = true
+theme = catppuccin-macchiato
+macos-titlebar-style = hidden
+background-opacity = 0.95
+background-blur-radius = 30
+copy-on-select = true
+quick-terminal-position = top
+quick-terminal-screen = mouse
+link-url = true
+
+# keybinds
+
+# grave_accent = `
+keybind = global:cmd+shift+grave_accent=toggle_quick_terminal
+keybind = super+r=reload_config

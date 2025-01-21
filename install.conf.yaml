@@ -8,6 +8,7 @@
     - ~/Library/Application Support/lazygit
     - ~/.config/nvim
     - ~/.config/kitty
+    - ~/.config/ghostty
     - ~/.config/yazi
     - ~/.config/bat
     # - ~/downloads
@@ -30,6 +31,7 @@
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/kitty/current-theme.conf: kitty/current-theme.conf
     ~/.config/kitty/startup.conf: kitty/startup.conf
+    ~/.config/ghostty/config: ghostty/config
     ~/.aerospace.toml: aerospace/aerospace.toml
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/yazi/yazi.toml: yazi/yazi.toml
