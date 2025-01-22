@@ -126,7 +126,7 @@ path=(
   "/Users/paule/.spicetify"
   "/usr/local/opt/ruby/bin"
   "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
-  "/usr/local/opt/openjdk@17/bin"
+  "/opt/homebrew/opt/openjdk@17/bin"
   "/Library/TeX/texbin"
 )
 
