@@ -1,0 +1,118 @@
+# https://github.com/JanDeDobbeleer/oh-my-posh
+
+version = 3
+final_space = true
+
+[palette]
+blue = '#8AADF4'
+lavender = '#B7BDF8'
+os = '#ACB0BE'
+pink = '#F5BDE6'
+text = '#494D64'
+wight = '#FFFFFF'
+error = '#FF0000'
+
+[upgrade]
+source = 'cdn'
+interval = '168h'
+auto = false
+notice = false
+
+[transient_prompt]
+background = "transparent"
+foreground = "p:wight"
+template = "{{.Folder}} -> "
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+
+[[blocks.segments]]
+leading_diamond = ''
+template = '{{.Icon}} '
+foreground = 'p:wight'
+powerline_symbol = ''
+background = 'p:blue'
+type = 'os'
+style = 'diamond'
+
+[[blocks.segments]]
+template = '{{ .UserName }}@{{ .HostName }}'
+foreground = 'p:text'
+powerline_symbol = ''
+background = 'p:blue'
+type = 'session'
+style = 'diamond'
+
+[[blocks.segments]]
+template = ' {{ .PWD }}'
+foreground = 'p:text'
+powerline_symbol = ''
+background = 'p:pink'
+type = 'path'
+style = 'powerline'
+
+[[blocks.segments]]
+template = "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}"
+foreground = 'p:text'
+powerline_symbol = ''
+background = 'p:lavender'
+type = 'git'
+style = 'powerline'
+
+[blocks.segments.properties]
+branch_icon = ' '
+cherry_pick_icon = ' '
+commit_icon = ' '
+fetch_status = true
+fetch_upstream_icon = true
+merge_icon = ' '
+no_commits_icon = ' '
+rebase_icon = ' '
+revert_icon = ' '
+tag_icon = ' '
+
+[[blocks.segments]]
+type = "status"
+style = "powerline"
+powerline_symbol = ""
+foreground = "p:error"
+background = "p:pink"
+template = " ☠︎ {{ .Code }} "
+
+[blocks.segments.properties]
+always_enabled = false
+
+[[blocks]]
+type = "rprompt"
+
+[[blocks.segments]]
+type = "shell"
+style = "plain"
+foreground = "p:text"
+background = "transparent"
+template = "\uf489 {{ .Name }}"
+
+[[blocks.segments]]
+type = "executiontime"
+style = "plain"
+foreground = "p:text"
+background = "transparent"
+template = " {{ .FormattedMs }} "
+
+[blocks.segments.properties]
+threshold = 5000
+
+[[blocks.segments]]
+foreground = "p:blue"
+template = " {{ .CurrentDate | date .Format }} "
+style = "plain"
+type = "time"
+
+[blocks.segments.properties]
+time_format = "3:04PM"
+
+[secondary_prompt]
+background = "transparent"
+foreground = "p:blue"
+template = "-> "

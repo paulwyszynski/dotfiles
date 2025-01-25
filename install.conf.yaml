@@ -11,6 +11,7 @@
     - ~/.config/ghostty
     - ~/.config/yazi
     - ~/.config/bat
+    - ~/.config/oh-my-posh
     # - ~/downloads
     # - ~/.vim/undo-history
 
@@ -37,6 +38,7 @@
     ~/.config/yazi/yazi.toml: yazi/yazi.toml
     ~/.config/yazi/theme.toml: yazi/theme.toml  # Add ya pack -a yazi-rs/flavors:catppuccin-macchiato to install catppuccin theme
     ~/.config/bat.conf: bat/bat.conf
+    ~/.config/oh-my-posh/catppuccin.omp.toml: oh-my-posh/catppuccin.omp.toml
     # lazygit
     # brew
     # zellij -> replaced with tmux
