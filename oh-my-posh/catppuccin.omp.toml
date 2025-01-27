@@ -79,7 +79,7 @@ style = "powerline"
 powerline_symbol = ""
 foreground = "p:error"
 background = "p:pink"
-template = " ☠︎ {{ .Code }} "
+template = "  Error: {{ .Code }}"
 
 [blocks.segments.properties]
 always_enabled = false
