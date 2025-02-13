@@ -93,14 +93,6 @@ mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
-### Github Copilot CLI
-ghc() {
-  if exists gh; then
-    gh copilot explain "$1"
-  else
-    echo "\ngh is not installed. Please install it via Homebrew. Make sure GH Copilot CLI is setup.\n"
-  fi
-}
 ### ZSH-Vi-Mode
 ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 ZVM_VI_ESCAPE_BINDKEY=ESC
@@ -177,6 +169,11 @@ eval "$(zoxide init zsh)"
 
 ### Thefuck for auto-correction
 eval $(thefuck --alias fuck)
+
+### Github Copilot
+# After executing the following commands to create the aliases, you can run ghcs and ghce instead of gh copilot suggest and gh copilot explain
+# Chek https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-the-cli#setting-up-aliases
+eval "$(gh copilot alias -- zsh)"
 
 # Oh-my-posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
