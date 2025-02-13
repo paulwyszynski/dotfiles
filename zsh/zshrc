@@ -101,6 +101,9 @@ ghc() {
     echo "\ngh is not installed. Please install it via Homebrew. Make sure GH Copilot CLI is setup.\n"
   fi
 }
+### ZSH-Vi-Mode
+ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+ZVM_VI_ESCAPE_BINDKEY=ESC
 
 ### Path extended
 typeset -U path # Remove duplicates from path array. Lowercase path is an array. Uppercase PATH is a scalar.
