@@ -84,6 +84,11 @@ template = "  Error: {{ .Code }}"
 [blocks.segments.properties]
 always_enabled = false
 
+[[blocks.segments]]
+type = "text"
+style = "plain"
+template = "\n↳"
+
 [[blocks]]
 type = "rprompt"
 
