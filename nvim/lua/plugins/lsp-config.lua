@@ -7,7 +7,7 @@ return {
         "bash-language-server",
         "bash-debug-adapter",
         "css-lsp",
-        "dart-debug-adapter",
+        -- "dart-debug-adapter", -> Handled by flutter-tools.nvim
         "html-lsp",
         "jsonlint",
         "json-lsp",
@@ -36,7 +36,7 @@ return {
         lemminx = {},
         cssls = {},
         yamlls = {},
-        dartls = {},
+        -- dartls = {}, -> Handled by flutter-tools.nvim
       },
     },
   },
