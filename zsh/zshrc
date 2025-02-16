@@ -99,9 +99,10 @@ ZVM_VI_ESCAPE_BINDKEY=ESC
 
 ### Path extended
 typeset -U path # Remove duplicates from path array. Lowercase path is an array. Uppercase PATH is a scalar.
-path=(
+path+=(
   "$HOMEBREW_PREFIX/opt/curl/bin" # If you need to have curl first in your PATH, otherwise it will be overriden by /usr/bin/curl
-  $path
+  "/opt/homebrew/opt/ruby/bin/"
+  "/opt/homebrew/lib/ruby/gems/3.4.0/bin/"
   "$HOME/Library/Android/sdk/platform-tools"
   "/usr/bin"
   "/bin"
@@ -110,7 +111,6 @@ path=(
   "/usr/local/bin"
   "$HOMEBREW_PREFIX/bin"
   "$HOME/.spicetify"
-  "/usr/local/opt/ruby/bin"
   "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
   "/opt/homebrew/opt/openjdk@17/bin"
   "/Library/TeX/texbin"
