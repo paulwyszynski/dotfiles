@@ -1,0 +1,34 @@
+if true then
+  return {}
+end
+-- INFO:flutter run causing debugger start.
+--
+-- return {
+--   "nvim-flutter/flutter-tools.nvim",
+--   lazy = false,
+--   ft = "dart",
+--   dependencies = {
+--     "nvim-lua/plenary.nvim",
+--     -- "stevearc/dressing.nvim", --optional for vim.ui.select
+--   },
+--   config = true,
+--   opts = {
+--     flutter_path = "/opt/homebrew/bin/flutter",
+--     debugger = {
+--       enabled = true,
+--     },
+--     lsp = {
+--       on_attach = function(client, bufnr)
+--         if client.name == "dartls" then
+--           vim.api.nvim_buf_set_keymap(
+--             bufnr,
+--             "n",
+--             "<leader>cx",
+--             "<cmd>Telescope flutter commands<CR>",
+--             { desc = "Flutter" }
+--           )
+--         end
+--       end,
+--     },
+--   },
+-- }
