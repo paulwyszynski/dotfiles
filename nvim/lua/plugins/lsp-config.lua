@@ -8,6 +8,7 @@ return {
         "bash-debug-adapter",
         "css-lsp",
         -- "dart-debug-adapter", -> Handled by flutter-tools.nvim
+        "gradle-language-server",
         "html-lsp",
         "jsonlint",
         "json-lsp",
@@ -31,11 +32,21 @@ return {
         bashls = {
           filetypes = { "sh", "zsh" },
         },
+        gradle_ls = {},
+        --   root_dir = function(fname)
+        --     return require("lspconfig.util").root_pattern("settings.gradle", "build.gradle")(fname)
+        --   end,
+        --   init_options = {
+        --     settings = {
+        --       gradleWrapperEnabled = true,
+        --     },
+        --   },
+        -- },
         html = {},
-        jsonls = {},
+        -- jsonls = {},
         lemminx = {},
         cssls = {},
-        yamlls = {},
+        -- yamlls = {},
         -- dartls = {}, -> Handled by flutter-tools.nvim
       },
     },
