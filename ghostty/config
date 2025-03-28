@@ -1,5 +1,5 @@
 term = xterm-ghostty
-font-family = JetBrainsMono NFM Regular
+font-family = Maple Mono NF
 font-size = 15
 font-thicken = true
 theme = catppuccin-macchiato
