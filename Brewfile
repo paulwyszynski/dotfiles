@@ -1,5 +1,6 @@
 ### Taps ###
 
+tap "FelixKratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -13,6 +14,7 @@ tap "yonaskolb/beak", "https://github.com/yonaskolb/Beak.git"
 
 brew "bat"
 brew "bat-extras"
+brew "borders"
 brew "btop"
 brew "bundletool"
 brew "cmatrix"
