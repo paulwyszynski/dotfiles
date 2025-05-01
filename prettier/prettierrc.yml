@@ -4,3 +4,6 @@ overrides:
     options:
       proseWrap: always
       printWidth: 80
+  - files: '*.html'
+    options:
+      printWidth: 140
