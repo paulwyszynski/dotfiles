@@ -6,4 +6,4 @@ overrides:
       printWidth: 80
   - files: '*.html'
     options:
-      printWidth: 140
+      printWidth: 120
