@@ -1,0 +1,58 @@
+{
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    // we try to make semantic highlighting look good
+    "editor.semanticHighlighting.enabled": true,
+    // prevent VSCode from modifying the terminal colors
+    "terminal.integrated.minimumContrastRatio": 1,
+    // make the window's titlebar use the workbench colors
+    "window.titleBarStyle": "custom",
+    // applicable if you use Go, this is an opt-in flag!
+    "gopls": {
+        "ui.semanticTokens": true,
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Maple Mono NF",
+    "editor.fontVariations": false,
+    "editor.fontWeight": "normal",
+    "terminal.integrated.fontFamily": "Maple Mono NF",
+    "terminal.integrated.fontSize": 14,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.formatOnSave": true,
+    "terminal.external.osxExec": "Ghostty.app",
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.persistentSessionScrollback": 10000,
+    "editor.lineNumbers": "relative",
+    "editor.rulers": [
+        {
+            "column": 125,
+            "color": "#b7bdf8"
+        }
+    ],
+    "editor.wordWrapColumn": 120,
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 1.5,
+    "workbench.iconTheme": "a-file-icon-vscode",
+    "explorer.confirmDragAndDrop": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.autoSave": "afterDelay",
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.guides.bracketPairs": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "none",
+}
