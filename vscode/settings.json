@@ -59,4 +59,8 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "redhat.telemetry.enabled": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
 }
