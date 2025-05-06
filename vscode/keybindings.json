@@ -374,4 +374,18 @@
         "command": "workbench.action.decreaseViewSize",
         "when": "!editorFocus"
     },
+    {
+        "key": "cmd+alt+\\",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    }
 ]
