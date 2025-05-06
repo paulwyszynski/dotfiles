@@ -49,10 +49,13 @@
     "workbench.navigationControl.enabled": false,
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
-    "workbench.activityBar.location": "hidden",
     "editor.guides.bracketPairs": true,
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "hidden",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
