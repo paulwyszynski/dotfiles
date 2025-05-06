@@ -140,6 +140,22 @@
         "when": "vim.mode == 'Normal' && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
     {
+        "key": "space c shift-P",
+        "command": "markdown.showPreview",
+        "when": "vim.mode == 'Normal' && editorTextFocus && !notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "args": {
+            "commands": [
+                "markdown.showPreviewToSide",
+                "workbench.action.focusPreviousGroup",
+            ]
+        },
+        "key": "space c p",
+        "command": "runCommands",
+        "when": "vim.mode == 'Normal' && editorTextFocus && !notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
         "command": "workbench.action.closeActiveEditor",
         "key": "space b d",
         "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
