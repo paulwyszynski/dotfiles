@@ -345,5 +345,33 @@
     {
         "command": "-workbench.action.closeOtherEditors",
         "key": "alt+cmd+t"
-    }
+    },
+    {
+        "key": "shift+ctrl+right",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+ctrl+left",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+ctrl+down",
+        "command": "workbench.action.increaseViewHeight"
+    },
+    {
+        "key": "shift+ctrl+up",
+        "command": "workbench.action.decreaseViewHeight"
+    },
+    {
+        "key": "shift+ctrl+right",
+        "command": "workbench.action.increaseViewSize",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+ctrl+left",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "!editorFocus"
+    },
 ]
