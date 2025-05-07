@@ -284,6 +284,11 @@
         "key": "enter",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
     },
+    {
+        "key": "space enter", // Set the selected folder as root
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
     // Debug
     {
         "command": "workbench.action.debug.selectandstart",
