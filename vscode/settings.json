@@ -62,4 +62,36 @@
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "%"
+            ],
+            "commands": [
+                {
+                    "command": "editor.emmet.action.matchTag"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "%"
+            ],
+            "commands": [
+                {
+                    "command": "editor.emmet.action.matchTag"
+                }
+            ]
+        }
+    ],
+    "vim.highlightedyank.color": "rgba(0, 255, 0, 0.2)",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 200,
+    "vim.useSystemClipboard": true,
+    "vim.surround": true,
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true,
+    "vim.autoindent": true,
 }
