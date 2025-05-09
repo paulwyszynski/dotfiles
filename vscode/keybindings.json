@@ -221,6 +221,16 @@
         "key": "ctrl-p",
         "when": "hasSearchResult || inSearchEditor"
     },
+    {
+        "key": "space g h r",
+        "command": "git.revertSelectedRanges",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space g h p",
+        "command": "git.openChange",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
     // File Explorer
     {
         "command": "renameFile",
