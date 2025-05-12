@@ -187,7 +187,12 @@
     },
     {
         "command": "workbench.action.findInFiles",
+        "key": "space s shift-g",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
         "key": "space s g",
+        "command": "workbench.action.quickTextSearch",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
