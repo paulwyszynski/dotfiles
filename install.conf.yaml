@@ -35,8 +35,13 @@
     ~/.config/ghostty/config: ghostty/config
     ~/.aerospace.toml: aerospace/aerospace.toml
     ~/.tmux.conf: tmux/tmux.conf
+    # Add ya pack -a yazi-rs/flavors:catppuccin-macchiato to install catppuccin theme
+    # Add ya pack -a yazi-rs/plugins:full-border
+    # Add ya pack -a yazi-rs/plugins:chmod
     ~/.config/yazi/yazi.toml: yazi/yazi.toml
-    ~/.config/yazi/theme.toml: yazi/theme.toml  # Add ya pack -a yazi-rs/flavors:catppuccin-macchiato to install catppuccin theme
+    ~/.config/yazi/theme.toml: yazi/theme.toml
+    ~/.config/yazi/keymap.toml: yazi/keymap.toml
+    ~/.config/yazi/init.lua: yazi/init.lua
     ~/.config/bat.conf: bat/bat.conf
     ~/.config/oh-my-posh/catppuccin.omp.toml: oh-my-posh/catppuccin.omp.toml
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
