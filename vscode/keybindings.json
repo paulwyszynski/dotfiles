@@ -115,6 +115,11 @@
         "when": "vim.mode == 'VisualLine' && editorTextFocus"
     },
     {
+        "key": "g f",
+        "command": "seito-openfile.openFileFromText",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
         "command": "editor.action.showHover",
         "key": "shift-k",
         "when": "vim.mode == 'Normal' && editorTextFocus"
