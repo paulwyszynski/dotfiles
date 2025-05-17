@@ -28,37 +28,22 @@ type = 'prompt'
 alignment = 'left'
 
 [[blocks.segments]]
-leading_diamond = ''
 template = '{{.Icon}} '
 foreground = 'p:wight'
-powerline_symbol = ''
-background = 'p:blue'
 type = 'os'
-style = 'diamond'
+style = 'plain'
 
 [[blocks.segments]]
-template = '{{ .UserName }}@{{ .HostName }}'
-foreground = 'p:text'
-powerline_symbol = ''
-background = 'p:blue'
-type = 'session'
-style = 'diamond'
-
-[[blocks.segments]]
-template = " \uea83 {{ .PWD }}"
-foreground = 'p:text'
-powerline_symbol = ''
-background = 'p:pink'
+template = "\uea83 {{ .PWD }}"
+foreground = 'p:pink'
 type = 'path'
-style = 'powerline'
+style = 'plain'
 
 [[blocks.segments]]
 template = " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}"
-foreground = 'p:text'
-powerline_symbol = ''
-background = 'p:lavender'
+foreground = 'p:lavender'
 type = 'git'
-style = 'powerline'
+style = 'plain'
 
 [blocks.segments.properties]
 branch_icon = ' '
@@ -75,10 +60,8 @@ github_icon = ' '
 
 [[blocks.segments]]
 type = "status"
-style = "powerline"
-powerline_symbol = ""
+style = "plain"
 foreground = "p:error"
-background = "p:pink"
 template = "  Error: {{ .Code }}"
 
 [blocks.segments.properties]
@@ -121,4 +104,4 @@ time_format = "3:04PM"
 [secondary_prompt]
 background = "transparent"
 foreground = "p:blue"
-template = "-> "
+template = "->"
