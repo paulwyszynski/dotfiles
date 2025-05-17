@@ -55,7 +55,7 @@ return {
 
       local out = {
         id = note.id,
-        aliases = {},
+        aliases = note.aliases,
         tags = note.tags,
         author = "Paul Wyszynski",
         date = os.date("%Y-%m-%d-%a"),
