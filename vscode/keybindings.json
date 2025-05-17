@@ -583,4 +583,25 @@
         "command": "-markdown.extension.editing.toggleHeadingUp",
         "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
+    // Spell checker
+    {
+        "key": "z l",
+        "command": "cSpellIssuesViewByFile.focus",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "z g",
+        "command": "cSpell.addWordToUserDictionary",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "z w",
+        "command": "cSpell.removeWordFromUserDictionary",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "z =",
+        "command": "cSpell.suggestSpellingCorrections",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
+    }
 ]

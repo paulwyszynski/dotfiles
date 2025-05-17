@@ -98,4 +98,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "cSpell.language": "en,de-DE",
+    "cSpell.userWords": [
+        "Wyszynski"
+    ],
+    "cSpell.enabled": true,
 }
