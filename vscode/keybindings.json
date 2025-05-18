@@ -111,13 +111,18 @@
     },
     {
         "command": "editor.action.commentLine",
-        "key": "g c",
-        "when": "vim.mode == 'VisualLine' && editorTextFocus"
+        "key": "space g c",
+        "when": "vim.mode == 'VisualLine' && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "g f",
+        "command": "editor.action.commentLine",
+        "key": "space g c c",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space g f",
         "command": "seito-openfile.openFileFromText",
-        "when": "vim.mode == 'Normal' && editorTextFocus"
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "editor.action.showHover",
