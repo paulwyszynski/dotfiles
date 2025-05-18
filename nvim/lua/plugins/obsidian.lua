@@ -1,5 +1,5 @@
 return {
-  "epwalsh/obsidian.nvim",
+  "obsidian-nvim/obsidian.nvim",
   version = "*",
   lazy = true,
   ft = "markdown",
@@ -14,7 +14,9 @@ return {
     -- Optional, completion of wiki links, local markdown links, and tags using nvim-cmp.
     completion = {
       -- Set to false to disable completion.
-      nvim_cmp = true,
+      nvim_cmp = false,
+      -- Enables completion using blink.cmp
+      blink = true,
       -- Trigger completion at 2 chars.
       min_chars = 2,
     },
@@ -71,6 +73,9 @@ return {
 
       return out
     end,
+    -- picker = {
+    --   name = "fzf-lua",
+    -- },
     ui = {
       enable = false, --NOTE: I'm using markdown.nvim for rendering
     },
