@@ -599,4 +599,49 @@
         "command": "cSpell.suggestSpellingCorrections",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
     },
+    // Vim Remaps: Is necessary, because my custom vscode keybindings override the default vim keybindings
+    {
+        "key": "f space",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+        "args": {
+            "after": [
+                "f",
+                "space"
+            ]
+        }
+    },
+    {
+        "key": "shift+f space",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+        "args": {
+            "after": [
+                "F",
+                "space"
+            ]
+        }
+    },
+    {
+        "key": "t space",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+        "args": {
+            "after": [
+                "t",
+                "space"
+            ]
+        }
+    },
+    {
+        "key": "shift+t space",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+        "args": {
+            "after": [
+                "T",
+                "space"
+            ]
+        }
+    }
 ]
