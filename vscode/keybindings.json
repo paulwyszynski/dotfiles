@@ -110,16 +110,6 @@
         "when": "(vim.mode == 'VisualLine' || vim.mode == 'Normal') && editorTextFocus"
     },
     {
-        "command": "editor.action.commentLine",
-        "key": "space g c",
-        "when": "vim.mode == 'VisualLine' && (editorTextFocus || !inputFocus)"
-    },
-    {
-        "command": "editor.action.commentLine",
-        "key": "space g c c",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-    },
-    {
         "key": "space g f",
         "command": "seito-openfile.openFileFromText",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
@@ -608,5 +598,5 @@
         "key": "z =",
         "command": "cSpell.suggestSpellingCorrections",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
-    }
+    },
 ]
