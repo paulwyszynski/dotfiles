@@ -104,4 +104,16 @@
         "Wyszynski"
     ],
     "cSpell.enabled": true,
+    "todohighlight.keywords": [
+        {
+            "text": "INFO:",
+            "color": "#ffffff",
+            "backgroundColor": "#077509",
+        },
+        {
+            "text": "WARNING:",
+            "color": "#ffffff",
+            "backgroundColor": "#ff0000",
+        },
+    ],
 }
