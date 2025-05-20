@@ -86,6 +86,8 @@
             ]
         }
     ],
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
     "vim.highlightedyank.color": "rgba(0, 255, 0, 0.2)",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 200,
