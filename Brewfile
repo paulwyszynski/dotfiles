@@ -136,3 +136,27 @@ mas "Developer", id: 640199958
 mas "Messenger", id: 1480068668
 mas "Playgrounds", id: 1496833156
 mas "Xcode", id: 497799835
+
+vscode "atommaterial.a-file-icon-vscode"
+vscode "bradlc.vscode-tailwindcss"
+vscode "catppuccin.catppuccin-vsc"
+vscode "dautroc.yazi-vscode"
+vscode "davidanson.vscode-markdownlint"
+vscode "ecmel.vscode-html-css"
+vscode "esbenp.prettier-vscode"
+vscode "fr43nk.seito-openfile"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "htmlhint.vscode-htmlhint"
+vscode "mads-hartmann.bash-ide-vscode"
+vscode "redhat.vscode-yaml"
+vscode "sharat.vscode-brewfile"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "streetsidesoftware.code-spell-checker-german"
+vscode "sumneko.lua"
+vscode "tamasfe.even-better-toml"
+vscode "vscjava.vscode-gradle"
+vscode "vscodevim.vim"
+vscode "wayou.vscode-todo-highlight"
+vscode "yzhang.markdown-all-in-one"
+vscode "zignd.html-css-class-completion"
