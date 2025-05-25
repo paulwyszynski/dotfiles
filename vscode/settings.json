@@ -1,11 +1,16 @@
 {
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000"
+    },
     // we try to make semantic highlighting look good
     "editor.semanticHighlighting.enabled": true,
     // prevent VSCode from modifying the terminal colors
     "terminal.integrated.minimumContrastRatio": 1,
     // make the window's titlebar use the workbench colors
     "window.titleBarStyle": "custom",
+    "window.autoDetectColorScheme": true,
     // applicable if you use Go, this is an opt-in flag!
     "gopls": {
         "ui.semanticTokens": true,
@@ -29,7 +34,7 @@
     "editor.formatOnSave": true,
     "terminal.external.osxExec": "Ghostty.app",
     "terminal.integrated.enableImages": true,
-    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.gpuAcceleration": "off",
     "terminal.integrated.persistentSessionScrollback": 10000,
     "editor.lineNumbers": "relative",
     "editor.rulers": [
@@ -117,4 +122,10 @@
         },
     ],
     "explorer.confirmDelete": false,
+    "vscode_vibrancy.enableAutoTheme": true,
+    "vscode_vibrancy.preferedDarkTheme": "Catppuccin Mocha",
+    "vscode_vibrancy.preferedLightTheme": "Catppuccin Mocha",
+    "vscode_vibrancy.theme": "Catppuccin Mocha",
+    "vscode_vibrancy.opacity": -1,
+    "vscode_vibrancy.refreshInterval": 10,
 }
