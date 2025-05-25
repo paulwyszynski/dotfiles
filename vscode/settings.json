@@ -116,4 +116,5 @@
             "backgroundColor": "#ff0000",
         },
     ],
+    "explorer.confirmDelete": false,
 }
