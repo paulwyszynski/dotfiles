@@ -9,9 +9,12 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commaues
-after-startup-command = [
-  'exec-and-forget borders active_color=0xffee99a0 inactive_color=0xff6e738d width=8.0',
-]
+after-startup-command = []
+
+# INFO: Jankyborders currently highlights more than one window in accordion layout, check: https://github.com/FelixKratz/JankyBorders/issues/154
+# after-startup-command = [
+#   'exec-and-forget borders active_color=0xffee99a0 inactive_color=0xff6e738d width=8.0',
+# ]
 
 # Start AeroSpace at login
 start-at-login = true
