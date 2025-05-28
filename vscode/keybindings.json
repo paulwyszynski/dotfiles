@@ -1,4 +1,6 @@
 // Place your key bindings in this file to override the defaults
+// INFO: Space is used as a leader key Neovim style, but it actually conflicts with the default
+// Vim keybindings e.g. <f space>, or <t space> etc. therefore <shift+space> is used instead as leader key.
 [
     // Navigation
     {
@@ -38,12 +40,12 @@
     },
     {
         "command": "workbench.action.toggleActivityBarVisibility",
-        "key": "space a",
+        "key": "shift+space a",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "workbench.action.showAllEditors",
-        "key": "space f b",
+        "key": "shift+space f b",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
@@ -54,7 +56,7 @@
             ]
         },
         "command": "runCommands",
-        "key": "space e",
+        "key": "shift+space e",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
     },
     {
@@ -65,38 +67,38 @@
             ]
         },
         "command": "runCommands",
-        "key": "space e",
+        "key": "shift+space e",
         "when": "sideBarFocus && !inputFocus"
     },
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "space e",
+        "key": "shift+space e",
         "when": "vim.mode == 'Normal' && editorTextFocus && foldersViewVisible"
     },
     {
         "command": "workbench.action.splitEditor",
-        "key": "space shift-\\",
+        "key": "shift+space shift-\\",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "workbench.action.splitEditorDown",
-        "key": "space -",
+        "key": "shift+space -",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "editor.action.openLink",
-        "key": "space g x",
+        "key": "shift+space g x",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     // Coding
     {
         "command": "editor.action.codeAction",
-        "key": "space c a",
+        "key": "shift+space c a",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus"
     },
     {
         "command": "editor.action.toggleMinimap",
-        "key": "space u m",
+        "key": "shift+space u m",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
@@ -110,7 +112,7 @@
         "when": "(vim.mode == 'VisualLine' || vim.mode == 'Normal') && editorTextFocus"
     },
     {
-        "key": "space g f",
+        "key": "shift+space g f",
         "command": "seito-openfile.openFileFromText",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
@@ -121,26 +123,26 @@
     },
     {
         "command": "editor.action.rename",
-        "key": "space c r",
+        "key": "shift+space c r",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "workbench.action.gotoSymbol",
-        "key": "space c s",
+        "key": "shift+space c s",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "workbench.action.showAllSymbols",
-        "key": "space c cmd-s",
+        "key": "shift+space c cmd-s",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "editor.action.formatDocument",
-        "key": "space c f",
+        "key": "shift+space c f",
         "when": "vim.mode == 'Normal' && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
     {
-        "key": "space c shift-P",
+        "key": "shift+space c shift-P",
         "command": "markdown.showPreview",
         "when": "vim.mode == 'Normal' && editorTextFocus && !notebookEditorFocused && editorLangId == 'markdown'"
     },
@@ -151,58 +153,58 @@
                 "workbench.action.focusPreviousGroup",
             ]
         },
-        "key": "space c p",
+        "key": "shift+space c p",
         "command": "runCommands",
         "when": "vim.mode == 'Normal' && editorTextFocus && !notebookEditorFocused && editorLangId == 'markdown'"
     },
     {
         "command": "workbench.action.closeActiveEditor",
-        "key": "space b d",
+        "key": "shift+space b d",
         "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
     },
     {
         "command": "workbench.action.closeOtherEditors",
-        "key": "space b o",
+        "key": "shift+space b o",
         "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
     },
     {
         "command": "workbench.action.quickOpen",
-        "key": "space space",
+        "key": "shift+space shift+space",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "editor.action.revealDefinition",
-        "key": "space g d",
+        "key": "shift+space g d",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "editor.action.goToReferences",
-        "key": "space g r",
+        "key": "shift+space g r",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "editor.action.goToImplementation",
-        "key": "space g i",
+        "key": "shift+space g i",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "workbench.action.findInFiles",
-        "key": "space s shift-g",
+        "key": "shift+space s shift-g",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "space s g",
+        "key": "shift+space s g",
         "command": "workbench.action.quickTextSearch",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "workbench.action.replaceInFiles",
-        "key": "space s r",
+        "key": "shift+space s r",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "command": "workbench.action.quickOpenWithModes",
-        "key": "space f f",
+        "key": "shift+space f f",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
@@ -213,7 +215,7 @@
             ]
         },
         "command": "runCommands",
-        "key": "space g g",
+        "key": "shift+space g g",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
@@ -227,12 +229,12 @@
         "when": "hasSearchResult || inSearchEditor"
     },
     {
-        "key": "space g h r",
+        "key": "shift+space g h r",
         "command": "git.revertSelectedRanges",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "space g h p",
+        "key": "shift+space g h p",
         "command": "git.openChange",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
@@ -300,54 +302,54 @@
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
     },
     {
-        "key": "space enter", // Set the selected folder as root
+        "key": "shift+space enter", // Set the selected folder as root
         "command": "workbench.files.action.showActiveFileInExplorer",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     // Debug
     {
         "command": "workbench.action.debug.selectandstart",
-        "key": "space d a",
+        "key": "shift+space d a",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && debuggersAvailable"
     },
     {
         "command": "workbench.action.debug.stop",
-        "key": "space d t",
+        "key": "shift+space d t",
         "when": "vim.mode == 'Normal' && editorTextFocus && inDebugMode && !focusedSessionIsAttached"
     },
     {
         "command": "workbench.action.debug.stepOver",
-        "key": "space d o",
+        "key": "shift+space d o",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
     },
     {
         "command": "editor.debug.action.toggleBreakpoint",
-        "key": "space d b",
+        "key": "shift+space d b",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "editor.debug.action.showDebugHover",
-        "key": "space d e",
+        "key": "shift+space d e",
         "when": "vim.mode == 'Normal' && editorTextFocus && inDebugMode && debugState == 'stopped'"
     },
     {
         "command": "workbench.action.debug.continue",
-        "key": "space d c",
+        "key": "shift+space d c",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
     },
     {
         "command": "workbench.action.debug.stepInto",
-        "key": "space d i",
+        "key": "shift+space d i",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
     },
     {
         "command": "workbench.action.debug.stepOut",
-        "key": "space d o",
+        "key": "shift+space d o",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
     },
     {
         "command": "workbench.action.debug.restart",
-        "key": "space d r",
+        "key": "shift+space d r",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode"
     },
     {
@@ -442,39 +444,70 @@
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
+    // Tmux like keybindings for terminal
+    {
+        "key": "ctrl+a c",
+        "command": "workbench.action.terminal.newInActiveWorkspace",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+a -",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && panelPosition != 'bottom' && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+a shift+\\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && panelPosition == 'bottom' && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+a x",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+a e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+a w",
+        "command": "workbench.action.quickOpenTerm",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
     // Markdown Extension
     {
-        "key": "space c b",
+        "key": "shift+space c b",
         "command": "markdown.extension.editing.toggleBold",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
     {
-        "key": "space c i",
+        "key": "shift+space c i",
         "command": "markdown.extension.editing.toggleItalic",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
     {
-        "key": "space c m",
+        "key": "shift+space c m",
         "command": "markdown.extension.editing.toggleMath",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
     {
-        "key": "space c l",
+        "key": "shift+space c l",
         "command": "markdown.extension.editing.toggleStrikethrough",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
     {
-        "key": "space c t",
+        "key": "shift+space c t",
         "command": "markdown.extension.checkTaskList",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
     {
-        "key": "space c h",
+        "key": "shift+space c h",
         "command": "markdown.extension.editing.toggleHeadingUp",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
     {
-        "key": "space c shift-h",
+        "key": "shift+space c shift-h",
         "command": "markdown.extension.editing.toggleHeadingDown",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     },
@@ -580,68 +613,23 @@
     },
     // Spell checker
     {
-        "key": "z l",
+        "key": "shift+z l",
         "command": "cSpellIssuesViewByFile.focus",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "z g",
+        "key": "shift+z g",
         "command": "cSpell.addWordToUserDictionary",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "z w",
+        "key": "shift+z w",
         "command": "cSpell.removeWordFromUserDictionary",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
     },
     {
-        "key": "z =",
+        "key": "shift+z =",
         "command": "cSpell.suggestSpellingCorrections",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
     },
-    // Vim Remaps: Is necessary, because my custom vscode keybindings override the default vim keybindings
-    {
-        "key": "f space",
-        "command": "vim.remap",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
-        "args": {
-            "after": [
-                "f",
-                "space"
-            ]
-        }
-    },
-    {
-        "key": "shift+f space",
-        "command": "vim.remap",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
-        "args": {
-            "after": [
-                "F",
-                "space"
-            ]
-        }
-    },
-    {
-        "key": "t space",
-        "command": "vim.remap",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
-        "args": {
-            "after": [
-                "t",
-                "space"
-            ]
-        }
-    },
-    {
-        "key": "shift+t space",
-        "command": "vim.remap",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
-        "args": {
-            "after": [
-                "T",
-                "space"
-            ]
-        }
-    }
 ]
