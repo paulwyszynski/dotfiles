@@ -97,6 +97,9 @@ mkcd() {
 ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 ZVM_VI_ESCAPE_BINDKEY=ESC
 
+# Use new curl downloaded from Homebrew
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
 ### Path extended
 typeset -U path # Remove duplicates from path array. Lowercase path is an array. Uppercase PATH is a scalar.
 path+=(
