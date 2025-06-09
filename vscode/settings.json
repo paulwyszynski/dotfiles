@@ -89,6 +89,11 @@
         },
     ],
     "explorer.confirmDelete": false,
+    "lazygit-vscode.panels": {
+        "sidebar": "keep",
+        "panel": "hide",
+        "secondarySidebar": "keep"
+    },
     "vscode_vibrancy.enableAutoTheme": true,
     "vscode_vibrancy.preferedDarkTheme": "Catppuccin Mocha",
     "vscode_vibrancy.preferedLightTheme": "Catppuccin Mocha",
