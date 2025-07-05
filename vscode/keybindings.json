@@ -14,6 +14,16 @@
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
+        "command": "workbench.action.moveEditorLeftInGroup",
+        "key": "shift+space h",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "command": "workbench.action.moveEditorRightInGroup",
+        "key": "shift+space l",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
         "command": "workbench.action.terminal.focus",
         "key": "ctrl+`"
     },
