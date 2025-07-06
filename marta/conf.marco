@@ -1,0 +1,117 @@
+environment {
+    terminal "Ghostty"
+    textEditor "Visual Studio Code"
+}
+
+behavior {
+    theme "Kon"
+    quickSelect {
+        activateOnAnyCharacter false
+        filterMatchedItems true
+        defaultMode "substring"
+    }
+}
+
+keyBindings {
+    "h" "core.go.up"
+    "j" "core.move.down"
+    "k" "core.move.up"
+    "l" "core.open"
+    "Shift+k" "core.select.move.up"
+    "Shift+j" "core.select.move.down"
+    "Shift+h" "core.select.move.left"
+    "Shift+l" "core.select.move.right"
+    "g" "core.move.left"
+    "Shift+g" "core.move.right"
+    "Ctrl+d" "core.move.page.down"
+    "Ctrl+u" "core.move.page.up"
+
+    "c" "core.copy"
+    "y" "core.duplicate"
+    "x" "core.move"
+    "r" "core.rename"
+    "d" "core.trash"
+    "Shift+d" "core.delete"
+    "Shift+a" "core.new.folder"
+    "a" "core.new.file"
+    "e" "core.edit"
+    "Shift+e" "core.edit.folder"
+    "Shift+t" "core.ext.terminal.open"
+    
+    "." "core.hierarchy"
+    "v" "core.volumes"
+    "f" "core.favorites"
+    "Shift+f" "core.favorites.add"
+    "," "core.recent"
+    
+    "Ctrl+1" "core.tab.1"
+    "Ctrl+2" "core.tab.2"
+    "Ctrl+3" "core.tab.3"
+    "Ctrl+4" "core.tab.4"
+    "Ctrl+5" "core.tab.5"
+    "Ctrl+6" "core.tab.6"
+    "Ctrl+7" "core.tab.7"
+    "Ctrl+8" "core.tab.8"
+    "Ctrl+9" "core.tab.9"
+    "Cmd+1" null
+    "Cmd+2" null
+    "Cmd+3" null
+    "Cmd+4" null
+    "Cmd+5" null
+    "Cmd+6" null
+    "Cmd+7" null
+    "Cmd+8" null
+    "Cmd+9" null
+    "Opt+0" null
+    "Opt+1" null
+    "Opt+2" null
+    "Shift+Opt+2" null
+    "Opt+3" null
+}
+
+etty {
+    fonts {
+        normal [ "Maple Mono NF" 12 ]
+    }
+}
+
+fonts {
+    actionBar [ "Maple Mono NF" 12 ]
+    breadcrumbs [ "Maple Mono NF" 12 ]
+    virtualTabs [ "Maple Mono NF Bold" 12 ]
+    files [ "Maple Mono NF" 12 ]
+    statusBar [ "Maple Mono NF Light" 11 ]
+    tableHeader [ "Maple Mono NF" 11 ]
+    tabs [ "Maple Mono NF" 12 ]
+    preferences [ "Maple Mono NF" 12 ]
+}
+
+table {
+    defaults {
+        defaults {
+            columns ">size:100,modified:160,created:160"
+            showHiddenFiles false
+            
+            ordering {
+                column "modified"
+                isAscending false
+                showFoldersOnTop true
+            }
+        }
+    }
+}
+setup {
+    actionBar [
+        "core.open.with"
+        "core.copy"
+        "core.duplicate"
+        "core.move"
+        "core.rename"
+        "core.edit"
+        "core.edit.folder"
+        "core.new.file"
+        "core.new.folder"
+        "core.trash"
+        "core.delete"
+    ]
+}
