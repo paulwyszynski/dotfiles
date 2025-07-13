@@ -485,6 +485,16 @@
         "command": "workbench.action.quickOpenTerm",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
+    {
+        "key": "ctrl+a t",
+        "command": "workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+a t",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalTabsFocus"
+    },
     // Markdown Extension
     {
         "key": "shift+space c b",
