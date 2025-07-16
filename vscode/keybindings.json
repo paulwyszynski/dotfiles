@@ -454,6 +454,15 @@
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
+    // Zoom
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.zoomReset"
+    },
     // Tmux like keybindings for terminal
     {
         "key": "ctrl+a c",
@@ -494,6 +503,11 @@
         "key": "ctrl+a t",
         "command": "workbench.action.terminal.focus",
         "when": "terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+a u",
+        "command": "workbench.action.terminal.openUrlLink",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
         "key": "ctrl+a a",
