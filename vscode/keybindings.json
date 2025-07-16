@@ -495,6 +495,26 @@
         "command": "workbench.action.terminal.focus",
         "when": "terminalTabsFocus"
     },
+    {
+        "key": "ctrl+a a",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.selectAll",
+                },
+                {
+                    "command": "editor.action.clipboardCopyAction"
+                },
+                {
+                    "command": "workbench.action.files.newUntitledFile"
+                },
+                {
+                    "command": "editor.action.clipboardPasteAction"
+                }
+            ]
+        }
+    },
     // Markdown Extension
     {
         "key": "shift+space c b",
