@@ -93,10 +93,6 @@ mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
-### ZSH-Vi-Mode
-ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
-ZVM_VI_ESCAPE_BINDKEY=ESC
-
 # Use new curl downloaded from Homebrew
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
