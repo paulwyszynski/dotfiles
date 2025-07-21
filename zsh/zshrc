@@ -161,7 +161,12 @@ alias icat='kitten icat'
 alias printenvs='<<<${(F)path}'
 
 ### Shell integrations
-eval "$(fzf --zsh)"
+
+# INFO: https://github.com/junegunn/fzf/issues/1304#issuecomment-2987478947
+zvm_after_init() {
+  # Set up fzf key bindings and fuzzy completion
+  source <(fzf --zsh)
+}
 
 ### Zoxide for autocompletions in the terminal
 eval "$(zoxide init zsh)"
