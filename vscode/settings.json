@@ -121,6 +121,18 @@
                 }
             ]
         },
+        {
+            "before": [
+                "<ESC>"
+            ],
+            "when": [
+                "editorFocus"
+            ],
+            "commands": [
+                ":nohl"
+            ],
+            "silent": true
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
