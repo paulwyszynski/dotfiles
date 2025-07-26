@@ -686,4 +686,9 @@
         "command": "cSpell.suggestSpellingCorrections",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine') && (editorTextFocus || !inputFocus)"
     },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-extension.matchitJumpItems",
+        "when": "editorTextFocus"
+    },
 ]

@@ -4,6 +4,9 @@
     "workbench.colorCustomizations": {
         "terminal.background": "#00000000"
     },
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.list.smoothScrolling": true,
     // we try to make semantic highlighting look good
     "editor.semanticHighlighting.enabled": true,
     // prevent VSCode from modifying the terminal colors
@@ -11,6 +14,7 @@
     // make the window's titlebar use the workbench colors
     "window.titleBarStyle": "custom",
     "window.autoDetectColorScheme": true,
+    "window.density.editorTabHeight": "compact",
     // applicable if you use Go, this is an opt-in flag!
     "gopls": {
         "ui.semanticTokens": true,
@@ -51,8 +55,6 @@
     "explorer.confirmDragAndDrop": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "workbench.navigationControl.enabled": false,
-    "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
     "editor.guides.bracketPairs": true,
     "[html]": {
@@ -134,20 +136,28 @@
             "silent": true
         }
     ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "%"
+            ],
+            "commands": [
+                "extension.matchitJumpItems"
+            ]
+        }
+    ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "%"
             ],
             "commands": [
-                {
-                    "command": "editor.emmet.action.matchTag"
-                }
+                "extension.matchitSelectItems"
             ]
         }
     ],
     "git.openRepositoryInParentFolders": "always",
     "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true
+    "terminal.integrated.smoothScrolling": true,
+    "githubPullRequests.codingAgent.uiIntegration": true,
 }
