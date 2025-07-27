@@ -226,12 +226,12 @@
         },
         "command": "runCommands",
         "key": "shift+space g g",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)&& (!sideBarVisible || activeViewlet != 'workbench.view.scm')"
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && (!sideBarVisible || activeViewlet != 'workbench.view.scm')"
     },
     {
         "key": "shift+space g g",
         "command": "workbench.action.closeSidebar",
-        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+        "when": "(sideBarFocus || (vim.mode == 'Normal' && (editorTextFocus || !inputFocus))) && activeViewlet == 'workbench.view.scm'"
     },
     {
         "command": "search.action.focusNextSearchResult",
