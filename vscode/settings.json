@@ -102,6 +102,13 @@
     "vscode_vibrancy.theme": "Catppuccin Mocha",
     "vscode_vibrancy.opacity": -1,
     "vscode_vibrancy.refreshInterval": 10,
+    "git.openRepositoryInParentFolders": "always",
+    "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "githubPullRequests.codingAgent.uiIntegration": true,
+    "javascript.suggest.paths": false,
+    "typescript.suggest.paths": false,
+    "path-intellisense.showHiddenFiles": true,
     "vim.hlsearch": true,
     "vim.incsearch": true,
     "vim.highlightedyank.color": "rgba(0, 255, 0, 0.2)",
@@ -155,9 +162,5 @@
                 "extension.matchitSelectItems"
             ]
         }
-    ],
-    "git.openRepositoryInParentFolders": "always",
-    "editor.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
-    "githubPullRequests.codingAgent.uiIntegration": true,
+    ]
 }
