@@ -1,3 +1,5 @@
 [mgr]
-linemode = "mtime"
+linemode = "size_and_mtime"
 show_symlink = true
+sort_by = "mtime"
+sort_reverse = true
