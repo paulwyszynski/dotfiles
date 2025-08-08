@@ -111,6 +111,7 @@ cask "kitty"
 cask "logi-options+"
 cask "marta"
 cask "obsidian"
+cask "openmtp" # Alternative to Android File Transfer
 cask "proxyman"
 cask "rectangle"
 cask "signal"
