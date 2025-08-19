@@ -44,7 +44,6 @@
     ~/.config/yazi/init.lua: yazi/init.lua
     ~/.config/bat.conf: bat/bat.conf
     ~/.config/oh-my-posh/catppuccin.omp.toml: oh-my-posh/catppuccin.omp.toml
-    ~/Library/Preferences/mo.com.sleeplessmind.kindaVim.plist: kindavim/mo.com.sleeplessmind.kindaVim.plist
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/org.yanex.marta/conf.marco: marta/conf.marco
