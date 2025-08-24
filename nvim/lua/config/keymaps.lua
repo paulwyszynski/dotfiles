@@ -16,6 +16,7 @@ end, { desc = "Search Vault for Text" })
 keymap.set("n", "<leader>svf", function()
   Snacks.picker.files({ cwd = obsidian_vault_path })
 end, { desc = "Search Vault for Files" })
+keymap.set("n", "<leader>go", "<cmd>DiffviewOpen<cr>", { desc = "Open Diffview" })
 
 -- INFO: Not used anymore, since caps lock is remapped to escape
 
