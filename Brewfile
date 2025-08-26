@@ -14,7 +14,6 @@ tap "yonaskolb/beak", "https://github.com/yonaskolb/Beak.git"
 
 brew "bat"
 brew "bat-extras"
-brew "borders"
 brew "btop"
 brew "bundletool"
 brew "cmatrix"
