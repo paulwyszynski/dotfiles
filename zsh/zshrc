@@ -78,6 +78,20 @@ function y() {
   rm -f -- "$tmp"
 }
 
+# INFO: Mount or unmount the remote file system which resides on the Raspberry PI SD card
+PI_HOLE_MOUNT_PATH="$HOME/Volumes/sshfs/pihole"
+
+function mountPiHole() {
+  mkdir -p "$PI_HOLE_MOUNT_PATH"
+  sshfs pi@pihole:/ "$PI_HOLE_MOUNT_PATH"
+  cd "$PI_HOLE_MOUNT_PATH" || exit
+}
+
+function unmountPiHole() {
+  diskutil unmount force "$PI_HOLE_MOUNT_PATH"
+  cd "$HOME" || exit
+}
+
 # Better copy. Creates missing folder when trying to copy with cp
 bcp() {
   mkdir -p $(dirname "$2") && cp "$1" "$2"
