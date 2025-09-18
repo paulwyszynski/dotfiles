@@ -9,6 +9,7 @@ background-blur-radius = 30
 copy-on-select = true
 quick-terminal-position = top
 quick-terminal-screen = mouse
+quick-terminal-size = 800px
 link-url = true
 
 # keybinds
