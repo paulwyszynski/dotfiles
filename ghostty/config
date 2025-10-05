@@ -7,10 +7,11 @@ macos-titlebar-style = hidden
 background-opacity = 0.95
 background-blur-radius = 30
 copy-on-select = true
-quick-terminal-position = top
+quick-terminal-position = center
 quick-terminal-screen = mouse
-quick-terminal-size = 800px
+quick-terminal-size = 75%,75%
 link-url = true
+custom-shader = shaders/cursor_blaze_tapered.glsl
 
 # keybinds
 
