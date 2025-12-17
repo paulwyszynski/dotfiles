@@ -113,23 +113,24 @@ ZVM_VI_ESCAPE_BINDKEY=ESC
 
 ### Use new curl downloaded from Homebrew
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 ### Path extended
 typeset -U path # Remove duplicates from path array. Lowercase path is an array. Uppercase PATH is a scalar.
 path+=(
   "$HOMEBREW_PREFIX/opt/curl/bin" # If you need to have curl first in your PATH, otherwise it will be overriden by /usr/bin/curl
-  "/opt/homebrew/opt/ruby/bin/"
-  "/opt/homebrew/lib/ruby/gems/3.4.0/bin/"
+  "$HOMEBREW_PREFIX/opt/ruby/bin"
+  "$HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin/"
+  "$HOMEBREW_PREFIX/bin"
+  "$HOMEBREW_PREFIX/opt/openjdk@17/bin"
   "$HOME/Library/Android/sdk/platform-tools"
   "/usr/bin"
   "/bin"
   "/usr/sbin"
   "/sbin"
   "/usr/local/bin"
-  "$HOMEBREW_PREFIX/bin"
   "$HOME/.spicetify"
   "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
-  "/opt/homebrew/opt/openjdk@17/bin"
   "/Library/TeX/texbin"
 )
 
