@@ -36,10 +36,10 @@ gui:
   authorColors:
     Paul Wyszynski: white
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
-    # useConfig: false
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
+      # useConfig: false
   commit:
     signOff: false
     verbose: default # one of 'default' | 'always' | 'never'
@@ -74,9 +74,9 @@ git:
   allBranchesLogCmds:
     - git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=medium
 os:
-  editPreset: "vscode" # see 'Configuring File Editing' section
+  editPreset: "nvim" # see 'Configuring File Editing' section
   editCommandTemplate: ""
-  open: "vscode"
+  open: "nvim"
 refresher:
   refreshInterval: 10 # File/submodule refresh interval in seconds. Auto-refresh can be disabled via option 'git.autoRefresh'.
   fetchInterval: 60 # Re-fetch interval in seconds. Auto-fetch can be disabled via option 'git.autoFetch'.
@@ -170,7 +170,7 @@ keybinding:
     viewResetOptions: D
     fetch: f
     toggleTreeView: "`"
-    openMergeTool: M
+    openMergeOptions: M
     openStatusFilter: <c-b>
   branches:
     createPullRequest: o
