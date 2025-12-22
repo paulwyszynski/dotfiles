@@ -179,6 +179,9 @@ alias vimdiff='nvim -d'
 alias icat='kitten icat'
 alias printenvs='<<<${(F)path}'
 
+### ZSH Vi Mode
+ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+
 ### Shell integrations
 
 # INFO: https://github.com/junegunn/fzf/issues/1304#issuecomment-2987478947
