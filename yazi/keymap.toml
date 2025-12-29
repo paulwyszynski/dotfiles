@@ -1,4 +1,8 @@
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["c", "m"]
 run = "plugin chmod"
 desc = "Chmod on selected files"
+[[mgr.prepend_keymap]]
+on = ["<S-s>"]
+run = "plugin what-size"
+desc = "Calc size of selection or cwd"
