@@ -1,6 +1,8 @@
 local obsidian_vault_path = os.getenv("OBSIDIAN_VAULT")
+local dotfiles_path = os.getenv("HOME") .. "/.dotfiles"
 local live_grep_command = string.format(":lua Snacks.picker.grep({ cwd = '%s' })", obsidian_vault_path)
 local find_files_command = string.format(":lua Snacks.picker.files({ cwd = '%s' })", obsidian_vault_path)
+local find_dotfiles_command = string.format(":lua Snacks.picker.files({ cwd = '%s' })", dotfiles_path)
 
 return {
   "folke/snacks.nvim",
@@ -27,6 +29,12 @@ return {
             action = ":LazyExtras",
           },
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
+          {
+            icon = "󰊤",
+            key = "d",
+            desc = "Dotfiles",
+            action = find_dotfiles_command,
+          },
           {
             icon = " ",
             key = "1",
