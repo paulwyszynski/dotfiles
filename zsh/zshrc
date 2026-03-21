@@ -107,6 +107,17 @@ mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
+### Uses television cli tool to copy with fuzzy finder
+tvc() {
+  local file
+  file=$(tv files)
+  if [ -n "$file" ]; then
+    cp "$file" "$1"
+  else
+    echo "No file selected."
+  fi
+}
+
 ### ZSH-Vi-Mode
 ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 ZVM_VI_ESCAPE_BINDKEY=ESC
@@ -178,6 +189,8 @@ alias c='clear'
 alias vimdiff='nvim -d'
 alias icat='kitten icat'
 alias printenvs='<<<${(F)path}'
+alias tvf='nvim $(tv files)'
+alias tvd='cd $(tv dirs)'
 
 ### ZSH Vi Mode
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
@@ -199,7 +212,6 @@ eval $(thefuck --alias fuck)
 ### Github Copilot
 # After executing the following commands to create the aliases, you can run ghcs and ghce instead of gh copilot suggest and gh copilot explain
 # Chek https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-the-cli#setting-up-aliases
-eval "$(gh copilot alias -- zsh)"
 
 # Oh-my-posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
