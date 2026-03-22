@@ -189,8 +189,6 @@ alias c='clear'
 alias vimdiff='nvim -d'
 alias icat='kitten icat'
 alias printenvs='<<<${(F)path}'
-alias tvf='nvim $(tv files)'
-alias tvd='cd $(tv dirs)'
 
 ### ZSH Vi Mode
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
