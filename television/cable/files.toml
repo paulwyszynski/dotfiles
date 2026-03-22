@@ -12,7 +12,7 @@ env = { BAT_THEME = "ansi" }
 
 [keybindings]
 shortcut = "f1"
-f12 = "actions:edit"
+enter = "actions:edit"
 ctrl-up = "actions:goto_parent_dir"
 
 [actions.edit]
