@@ -1,0 +1,123 @@
+# Mole Cleanup Preview - 2026-03-22 17:34:53
+#
+# How to protect files:
+# 1. Copy any path below to ~/.config/mole/whitelist
+# 2. Run: mo clean --whitelist
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/paule/Library/Caches  # 12.05GB, 82 items
+/Users/paule/Library/Logs  # 909.0MB, 264 items
+
+=== App caches ===
+/Users/paule/Library/Saved Application State  # 188KB, 15 items
+/Users/paule/Library/Suggestions  # 12.2MB, 19 items
+
+=== Browsers ===
+/Users/paule/Library/Caches/com.apple.Safari  # 86KB, 2 items
+/Users/paule/Library/Caches/Google/Chrome  # 1.14GB, 3 items
+/Users/paule/Library/Application Support/Google/Chrome/GrShaderCache/GPUCache  # 17.7MB, 5 items
+/Users/paule/Library/Application Support/Google/Chrome/Profile 1/GPUCache  # 558KB, 5 items
+/Users/paule/Library/Application Support/Google/Chrome/ShaderCache/GPUCache  # 558KB, 5 items
+/Users/paule/Library/Application Support/Google/Chrome/Default/GPUCache  # 5.8MB, 5 items
+/Users/paule/Library/Application Support/Google/Chrome/component_crx_cache  # 34.0MB, 18 items
+/Users/paule/Library/Application Support/Google/GoogleUpdater/crx_cache  # 849.6MB, 4 items
+/Users/paule/Library/Application Support/Google/GoogleUpdater  # 2.1MB, 2 items
+/Users/paule/Library/Caches/Firefox/Profiles  # 1.16GB
+/Users/paule/Library/Caches/zen/Profiles  # 1.14GB
+
+=== Cloud & Office ===
+
+=== Developer tools ===
+/Users/paule/.npm/_cacache  # 2.14GB, 2 items
+/Users/paule/.npm/_npx  # 20.1MB, 3 items
+/Users/paule/.npm/_logs  # 198KB, 12 items
+/Users/paule/.npm/_prebuilds/9f979f-keytar-v7.9.0-napi-v3-darwin-arm64.tar.gz  # 25KB
+/Users/paule/.bun/install/cache  # 54.1MB, 48 items
+/Users/paule/dev/Git/Flutter/test_app/.dart_tool  # 39.7MB
+/Users/paule/dev/Git/Flutter/test_app/build  # 351.6MB
+/Users/paule/Library/Caches/Google/AndroidStudio2025.1.1  # 821.2MB, 17 items
+/Users/paule/Library/Caches/Google/AndroidStudio2025.1.2  # 287.1MB, 18 items
+/Users/paule/Library/Caches/Google/AndroidStudio2024.2  # 2.71GB, 23 items
+/Users/paule/.android/cache  # 4.8MB, 72 items
+/Users/paule/Library/Developer/Xcode/UserData/IB Support/Simulator Devices  # 152.6MB
+/Users/paule/Library/Caches/SentryCrash  # 8KB, 2 items
+/Users/paule/Library/Caches/com.apple.dt.Xcode  # 14.6MB, 5 items
+/Users/paule/Library/Developer/Xcode/iOS Device Logs  # 1.1MB, 16 items
+/Users/paule/Library/Logs/CoreSimulator  # 78.3MB, 35 items
+/Users/paule/Library/Developer/Xcode/DerivedData  # 1.45GB, 20 items
+/Users/paule/Library/Developer/Xcode/DocumentationCache  # 1.33GB, 4 items
+/Users/paule/Library/Developer/Xcode/DocumentationIndex/DeveloperDocumentation.index  # 4KB
+/Users/paule/Library/Application Support/Code/logs  # 2.0MB, 12 items
+/Users/paule/Library/Application Support/Code/Cache/Cache_Data  # 249.6MB
+/Users/paule/Library/Application Support/Code/CachedData  # 110.8MB, 10 items
+/Users/paule/Library/Caches/Homebrew  # 2.42GB, 278 items
+
+=== Applications ===
+/Users/paule/Library/Application Support/discord/Cache/Cache_Data  # 979.3MB
+/Users/paule/Library/Caches/ru.keepcoder.Telegram  # 1.3MB, 3 items
+/Users/paule/Library/Caches/com.skype.skype  # 222KB, 3 items
+/Users/paule/Library/Application Support/Microsoft/Teams/Cache/Cache_Data  # 54.4MB
+/Users/paule/Library/Application Support/Microsoft/Teams/Code Cache  # 209.7MB, 2 items
+/Users/paule/Library/Application Support/Microsoft/Teams/GPUCache  # 558KB, 5 items
+/Users/paule/Library/Application Support/Microsoft/Teams/tmp  # 221.2MB, 2 items
+/Users/paule/Library/Caches/Adobe  # 250.0MB, 5 items
+/Users/paule/Library/Caches/com.adobe.acc.AdobeDesktopService  # 2.4MB, 4 items
+/Users/paule/Library/Caches/com.adobe.accmac  # 82KB, 2 items
+/Users/paule/Library/Caches/com.adobe.AdobeIPCBroker  # 82KB, 2 items
+/Users/paule/Library/Caches/com.adobe.AdobeCRDaemon  # 82KB, 2 items
+/Users/paule/Library/Caches/com.adobe.Photoshop  # 2.7MB, 5 items
+/Users/paule/Library/Caches/com.adobe.acc.AdobeCreativeCloud  # 86KB, 3 items
+/Users/paule/Library/Caches/com.adobe.ccd.helper  # 86KB, 3 items
+/Users/paule/Library/Caches/com.adobe.lightroomCC  # 8.7MB, 5 items
+/Users/paule/Library/Caches/com.adobe.LightroomClassicCC7  # 466KB, 4 items
+/Users/paule/Library/Caches/com.apple.TV  # 29.9MB, 7 items
+/Users/paule  # 461KB, 8 items
+/Users/paule/.lesshst  # 1KB
+/Users/paule/.wget-hsts  # 1KB
+/Users/paule/Library/Caches/com.runningwithcrayons.Alfred  # 13.3MB, 2 items
+
+=== Virtualization ===
+
+=== Application Support ===
+
+=== Orphaned data ===
+/Users/paule/Library/WebKit/com.cocoatech.PathFinder  # 102KB
+/Users/paule/Library/WebKit/com.xbarapp.app  # 430KB
+/Users/paule/Library/HTTPStorages/com.bitgapp.eqmac.binarycookies  # 1KB
+/Users/paule/Library/HTTPStorages/com.garmin.renu.service  # 172KB
+/Users/paule/Library/HTTPStorages/com.oracle.java.Java-Updater  # 238KB
+/Users/paule/Library/HTTPStorages/org.sparkle-project.Downloader  # 61KB
+/Users/paule/Library/HTTPStorages/net.java.openjdk.cmd  # 57KB
+/Users/paule/Library/Cookies/Cookies.binarycookies  # 16KB
+/Users/paule/Library/Cookies/com.bitgapp.eqMac2.binarycookies  # 1KB
+/Users/paule/Library/Cookies/com.bitgapp.eqmac.binarycookies  # 1KB
+/Users/paule/Library/Cookies/com.bjango.iStat-Menus-Updater.binarycookies  # 1KB
+/Users/paule/Library/Cookies/com.cocoatech.PathFinder.binarycookies  # 4KB
+/Users/paule/Library/Cookies/com.github.atom.binarycookies  # 1KB
+/Users/paule/Library/Cookies/com.oracle.java.Java-Updater.binarycookies  # 2KB
+/Users/paule/Library/Cookies/com.pokerstars.PokerStarsBrowse.binarycookies  # 4KB
+/Users/paule/Library/Cookies/com.pokerstars.PokerStarsEU.binarycookies  # 1KB
+
+=== Apple Silicon updates ===
+
+=== Device backups ===
+
+=== Time Machine ===
+
+=== Large files ===
+
+=== System Data clues ===
+
+=== Project artifacts ===
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 32.42GB
+# Items: 1628
+# Categories: 70
