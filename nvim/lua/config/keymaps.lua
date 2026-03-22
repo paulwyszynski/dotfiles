@@ -18,8 +18,30 @@ keymap.set("n", "<leader>svf", function()
 end, { desc = "Search Vault for Files" })
 keymap.set("n", "<leader>go", "<cmd>DiffviewOpen<cr>", { desc = "Open Diffview" })
 
--- INFO: Not used anymore, since caps lock is remapped to escape
+-- Codex: Floating terminal toggles (root/cwd) with terminal-mode fallback
+local function toggle_terminal(cwd)
+  local win_config = vim.api.nvim_win_get_config(0)
+  if vim.bo.buftype == "terminal" and win_config.relative ~= "" then
+    vim.cmd.close()
+    return
+  end
+  Snacks.terminal(nil, { cwd = cwd })
+end
 
+local toggle_root_terminal = function()
+  toggle_terminal(LazyVim.root())
+end
+
+local toggle_cwd_terminal = function()
+  toggle_terminal(vim.fn.getcwd())
+end
+
+-- INFO: Fixing the floating terminal open/close situation
+keymap.set({ "n", "t" }, "<C-/>", toggle_root_terminal, { desc = "Terminal (Root Dir)" })
+keymap.set({ "n", "t" }, "<C-_>", toggle_root_terminal, { desc = "Terminal (Root Dir)" })
+keymap.set({ "n", "t" }, "<C-.>", toggle_cwd_terminal, { desc = "Terminal (cwd)" })
+
+-- INFO: Not used anymore, since caps lock is remapped to escape
 -- Better escape
 -- keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true })
 -- Leads to slow scrolling down inside lazygit
