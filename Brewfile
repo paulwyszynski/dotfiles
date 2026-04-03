@@ -1,91 +1,92 @@
 ### Taps ###
 
-tap "FelixKratz/formulae"
-tap "homebrew/bundle"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "koekeishiya/formulae"
-tap "mono0926/license-plist"
-tap "nikitabobko/tap"
-tap "xcodesorg/made"
-tap "yonaskolb/beak", "https://github.com/yonaskolb/Beak.git"
+tap 'FelixKratz/formulae'
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'homebrew/services'
+tap 'koekeishiya/formulae'
+tap 'mono0926/license-plist'
+tap 'nikitabobko/tap'
+tap 'xcodesorg/made'
+tap 'yonaskolb/beak', 'https://github.com/yonaskolb/Beak.git'
 
 ### Brews (Packages/Formulae) ###
 
-brew "aria2"
-brew "bat"
-brew "bat-extras"
-brew "btop"
-brew "bundletool"
-brew "cmatrix"
-brew "copilot-cli"
-brew "curl"
-brew "direnv"
-brew "docker"
-brew "eza"
-brew "fastfetch"
-brew "fd"
-brew "ffmpegthumbnailer"
-brew "flake8"
-brew "fx"
-brew "fzf"
-brew "gcc"
-brew "gd"
-brew "gh"
-brew "git"
-brew "git-delta"
-brew "git-flow"
-brew "glow"
-brew "gnutls"
-brew "go"
-brew "harfbuzz"
-brew "htop"
-brew "httpie"
-brew "hyperkey"
-brew "imagemagick"
-brew "jandedobbeleer/oh-my-posh/oh-my-posh"
-brew "jq"
-brew "kdoctor"
-brew "lazygit"
-brew "luarocks"
-brew "mas"
-brew "mint"
-brew "mole"
-brew "neovim"
-brew "node"
-brew "openjdk@17"
-brew "otree"
-brew "pandoc"
-brew "pkg-config"
-brew "poppler"
-brew "powerlevel10k"
-brew "python"
-brew "raycast"
-brew "ripgrep"
-brew "sevenzip"
-brew "shellcheck"
-brew "shfmt"
-brew "spicetify-cli"
-brew "sshfs"
-brew "sshs"
-brew "stylua"
-brew "swiftformat"
-brew "swiftgen"
-brew "swiftlint"
-brew "swiftlint"
-brew "television"
-brew "thefuck"
-brew "tlrc"
-brew "tmux"
-brew "tree"
-brew "tree-sitter"
-brew "tree-sitter-cli"
-brew "webp"
-brew "wget"
-brew "xcodesorg/made/xcodes"
-brew "yazi"
-brew "zoxide"
-brew "zsh"
+brew 'aria2'
+brew 'bat'
+brew 'bat-extras'
+brew 'btop'
+brew 'bundletool'
+brew 'cmatrix'
+brew 'copilot-cli'
+brew 'curl'
+brew 'direnv'
+brew 'docker'
+brew 'eza'
+brew 'fastfetch'
+brew 'fd'
+brew 'ffmpegthumbnailer'
+brew 'flake8'
+brew 'fx'
+brew 'fzf'
+brew 'gcc'
+brew 'gd'
+brew 'gh'
+brew 'git'
+brew 'git-delta'
+brew 'git-flow'
+brew 'glow'
+brew 'gnutls'
+brew 'go'
+brew 'harfbuzz'
+brew 'htop'
+brew 'httpie'
+brew 'hyperkey'
+brew 'imagemagick'
+brew 'jandedobbeleer/oh-my-posh/oh-my-posh'
+brew 'jq'
+brew 'kdoctor'
+brew 'lazygit'
+brew 'luarocks'
+brew 'mas'
+brew 'mint'
+brew 'mole'
+brew 'ncspot'
+brew 'neovim'
+brew 'node'
+brew 'openjdk@17'
+brew 'otree'
+brew 'pandoc'
+brew 'pkg-config'
+brew 'poppler'
+brew 'powerlevel10k'
+brew 'python'
+brew 'raycast'
+brew 'ripgrep'
+brew 'sevenzip'
+brew 'shellcheck'
+brew 'shfmt'
+brew 'spicetify-cli'
+brew 'sshfs'
+brew 'sshs'
+brew 'stylua'
+brew 'swiftformat'
+brew 'swiftgen'
+brew 'swiftlint'
+brew 'swiftlint'
+brew 'television'
+brew 'thefuck'
+brew 'tlrc'
+brew 'tmux'
+brew 'tree'
+brew 'tree-sitter'
+brew 'tree-sitter-cli'
+brew 'webp'
+brew 'wget'
+brew 'xcodesorg/made/xcodes'
+brew 'yazi'
+brew 'zoxide'
+brew 'zsh'
 
 ### Not used at the moment ####
 
@@ -103,34 +104,34 @@ brew "zsh"
 
 ### Casks (Applications) ###
 
-cask "aerospace"
-cask "alfred"
-cask "android-file-transfer"
-cask "android-studio"
-cask "appcleaner"
-cask "basictex"
-cask "charles"
-cask "firefox"
-cask "font-hack-nerd-font"
-cask "font-jetbrains-mono-nerd-font"
-cask "font-maple-mono-nf"
-cask "gimp"
-cask "kitty"
-cask "logi-options+"
-cask "macfuse"
-cask "marta"
-cask "obsidian"
-cask "openmtp" # Alternative to Android File Transfer
-cask "proxyman"
-cask "rectangle"
-cask "signal"
-cask "silicon-info"
-cask "telegram"
-cask "via"
-cask "vlc"
-cask "whatsapp"
-cask "xcodes"
-cask "zen-browser"
+cask 'aerospace'
+cask 'alfred'
+cask 'android-file-transfer'
+cask 'android-studio'
+cask 'appcleaner'
+cask 'basictex'
+cask 'charles'
+cask 'firefox'
+cask 'font-hack-nerd-font'
+cask 'font-jetbrains-mono-nerd-font'
+cask 'font-maple-mono-nf'
+cask 'gimp'
+cask 'kitty'
+cask 'logi-options+'
+cask 'macfuse'
+cask 'marta'
+cask 'obsidian'
+cask 'openmtp' # Alternative to Android File Transfer
+cask 'proxyman'
+cask 'rectangle'
+cask 'signal'
+cask 'silicon-info'
+cask 'telegram'
+cask 'via'
+cask 'vlc'
+cask 'whatsapp'
+cask 'xcodes'
+cask 'zen-browser'
 
 ### Not used at the moment ###
 
@@ -143,33 +144,33 @@ cask "zen-browser"
 # cask "postman"
 
 # Mac App Store command line interface
-mas "AusweisApp", id: 948660805
-mas "Developer", id: 640199958
-mas "Messenger", id: 1480068668
-mas "Playgrounds", id: 1496833156
-mas "Xcode", id: 497799835
+mas 'AusweisApp', id: 948_660_805
+mas 'Developer', id: 640_199_958
+mas 'Messenger', id: 1_480_068_668
+mas 'Playgrounds', id: 1_496_833_156
+mas 'Xcode', id: 497_799_835
 
-vscode "atommaterial.a-file-icon-vscode"
-vscode "bradlc.vscode-tailwindcss"
-vscode "catppuccin.catppuccin-vsc"
-vscode "dautroc.yazi-vscode"
-vscode "davidanson.vscode-markdownlint"
-vscode "ecmel.vscode-html-css"
-vscode "esbenp.prettier-vscode"
-vscode "fr43nk.seito-openfile"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "htmlhint.vscode-htmlhint"
-vscode "illixion.vscode-vibrancy-continued"
-vscode "mads-hartmann.bash-ide-vscode"
-vscode "redhat.vscode-yaml"
-vscode "sharat.vscode-brewfile"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "streetsidesoftware.code-spell-checker-german"
-vscode "sumneko.lua"
-vscode "tamasfe.even-better-toml"
-vscode "vscjava.vscode-gradle"
-vscode "vscodevim.vim"
-vscode "wayou.vscode-todo-highlight"
-vscode "yzhang.markdown-all-in-one"
-vscode "zignd.html-css-class-completion"
+vscode 'atommaterial.a-file-icon-vscode'
+vscode 'bradlc.vscode-tailwindcss'
+vscode 'catppuccin.catppuccin-vsc'
+vscode 'dautroc.yazi-vscode'
+vscode 'davidanson.vscode-markdownlint'
+vscode 'ecmel.vscode-html-css'
+vscode 'esbenp.prettier-vscode'
+vscode 'fr43nk.seito-openfile'
+vscode 'github.copilot'
+vscode 'github.copilot-chat'
+vscode 'htmlhint.vscode-htmlhint'
+vscode 'illixion.vscode-vibrancy-continued'
+vscode 'mads-hartmann.bash-ide-vscode'
+vscode 'redhat.vscode-yaml'
+vscode 'sharat.vscode-brewfile'
+vscode 'streetsidesoftware.code-spell-checker'
+vscode 'streetsidesoftware.code-spell-checker-german'
+vscode 'sumneko.lua'
+vscode 'tamasfe.even-better-toml'
+vscode 'vscjava.vscode-gradle'
+vscode 'vscodevim.vim'
+vscode 'wayou.vscode-todo-highlight'
+vscode 'yzhang.markdown-all-in-one'
+vscode 'zignd.html-css-class-completion'

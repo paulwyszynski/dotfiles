@@ -1,2 +1,3 @@
 zellij/plugins/*
 .DS_Store
+userstate.cbor
