@@ -184,6 +184,11 @@ return {
           icon = " ",
           highlight = "RenderMarkdownLink",
         },
+        docker = {
+          pattern = "docker[%w%p]*.com",
+          icon = " ",
+          highlight = "RenderMarkdownLink",
+        },
       },
     },
   },
