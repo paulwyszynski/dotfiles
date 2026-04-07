@@ -6,11 +6,15 @@ final_space = true
 [palette]
 blue = '#8AADF4'
 lavender = '#B7BDF8'
-os = '#ACB0BE'
 pink = '#F5BDE6'
-text = '#494D64'
-wight = '#FFFFFF'
-error = '#FF0000'
+green = '#A6DA95'
+peach = '#F5A97F'
+mauve = '#C6A0F6'
+red = '#ED8796'
+foreground = '#CAD3F5'
+subtext = '#A5ADCB'
+overlay = '#8087A2'
+teal = '#8BD5CA'
 
 [upgrade]
 source = 'cdn'
@@ -20,8 +24,8 @@ notice = false
 
 [transient_prompt]
 background = "transparent"
-foreground = "p:wight"
-template = "{{.Folder}} -> "
+foreground = "p:foreground"
+template = "{{ if eq .Env.POSH_VI_MODE \"NORMAL\" }}<p:peach>󰕮 NORMAL</>{{ else if eq .Env.POSH_VI_MODE \"VISUAL\" }}<p:mauve>󰈈 VISUAL</>{{ else if eq .Env.POSH_VI_MODE \"V-LINE\" }}<p:mauve>󰉶 V-LINE</>{{ else if eq .Env.POSH_VI_MODE \"REPLACE\" }}<p:red>󰛔 REPLACE</>{{ else }}<p:green>󰏫 INSERT</>{{ end }} {{ if eq .Code 0 }}<p:teal>❯</>{{ else }}<p:red>❯</>{{ end }} "
 
 [[blocks]]
 type = 'prompt'
@@ -29,7 +33,7 @@ alignment = 'left'
 
 [[blocks.segments]]
 template = '{{.Icon}} '
-foreground = 'p:wight'
+foreground = 'p:foreground'
 type = 'os'
 style = 'plain'
 
@@ -61,7 +65,7 @@ github_icon = ' '
 [[blocks.segments]]
 type = "status"
 style = "plain"
-foreground = "p:error"
+foreground = "p:red"
 template = "  Error: {{ .Code }}"
 
 [blocks.segments.properties]
@@ -70,7 +74,7 @@ always_enabled = false
 [[blocks.segments]]
 type = "text"
 style = "plain"
-template = "\n↳"
+template = "\n{{ if eq .Env.POSH_VI_MODE \"NORMAL\" }}<p:peach>󰕮 NORMAL</>{{ else if eq .Env.POSH_VI_MODE \"VISUAL\" }}<p:mauve>󰈈 VISUAL</>{{ else if eq .Env.POSH_VI_MODE \"V-LINE\" }}<p:mauve>󰉶 V-LINE</>{{ else if eq .Env.POSH_VI_MODE \"REPLACE\" }}<p:red>󰛔 REPLACE</>{{ else }}<p:green>󰏫 INSERT</>{{ end }} {{ if eq .Code 0 }}<p:teal>❯</>{{ else }}<p:red>❯</>{{ end }}"
 
 [[blocks]]
 type = "rprompt"
@@ -78,14 +82,14 @@ type = "rprompt"
 [[blocks.segments]]
 type = "shell"
 style = "plain"
-foreground = "p:text"
+foreground = "p:overlay"
 background = "transparent"
 template = "\uf489 {{ .Name }}"
 
 [[blocks.segments]]
 type = "executiontime"
 style = "plain"
-foreground = "p:text"
+foreground = "p:overlay"
 background = "transparent"
 template = " {{ .FormattedMs }} "
 

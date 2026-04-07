@@ -1,23 +1,23 @@
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
-    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
-    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
-        print -P "%F{33} %F{34}Installation successful.%f%b" || \
-        print -P "%F{160} The clone has failed.%f%b"
+  print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+  command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+  command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" &&
+    print -P "%F{33} %F{34}Installation successful.%f%b" ||
+    print -P "%F{160} The clone has failed.%f%b"
 fi
 
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+((${+_comps})) && _comps[zinit]=_zinit
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-    zdharma-continuum/zinit-annex-as-monitor \
-    zdharma-continuum/zinit-annex-bin-gem-node \
-    zdharma-continuum/zinit-annex-patch-dl \
-    zdharma-continuum/zinit-annex-rust
+  zdharma-continuum/zinit-annex-as-monitor \
+  zdharma-continuum/zinit-annex-bin-gem-node \
+  zdharma-continuum/zinit-annex-patch-dl \
+  zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
 
@@ -169,6 +169,8 @@ export LDFLAGS="-L$HOMEBREW_PREFIX/opt/curl/lib"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
 # For pkg-config to find curl you may need to set:
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/curl/lib/pkgconfig"
+# Initial mode for oh-my-posh template
+export POSH_VI_MODE="INSERT"
 
 ### Aliases
 alias ls='ls --color'
@@ -197,6 +199,30 @@ alias printenvs='<<<${(F)path}'
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 
 ### Shell integrations
+
+# Reset cursor to match current zsh-vi-mode after closing TUI apps (e.g. yazi)
+_fix_cursor() {
+  case $ZVM_MODE in
+  $ZVM_MODE_INSERT | $ZVM_MODE_REPLACE) printf '\e[5 q' ;;
+  *) printf '\e[2 q' ;;
+  esac
+}
+add-zsh-hook precmd _fix_cursor
+
+# Update POSH_VI_MODE and redraw oh-my-posh prompt on every vi mode switch
+zvm_after_select_vi_mode() {
+  case $ZVM_MODE in
+  $ZVM_MODE_NORMAL) POSH_VI_MODE="NORMAL" ;;
+  $ZVM_MODE_INSERT) POSH_VI_MODE="INSERT" ;;
+  $ZVM_MODE_VISUAL) POSH_VI_MODE="VISUAL" ;;
+  $ZVM_MODE_VISUAL_LINE) POSH_VI_MODE="V-LINE" ;;
+  $ZVM_MODE_REPLACE) POSH_VI_MODE="REPLACE" ;;
+  esac
+  export POSH_VI_MODE
+  _fix_cursor
+  _omp_precmd
+  zle && zle reset-prompt
+}
 
 # INFO: https://github.com/junegunn/fzf/issues/1304#issuecomment-2987478947
 zvm_after_init() {
