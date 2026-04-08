@@ -1,3 +1,4 @@
 zellij/plugins/*
 .DS_Store
 userstate.cbor
+mole/clean-list.txt
