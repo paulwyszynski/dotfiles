@@ -144,6 +144,7 @@ path+=(
   "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
   "/Library/TeX/texbin"
   "$HOME/.local/bin"
+  "$HOME/.cargo/bin"
 )
 
 ### Exports
