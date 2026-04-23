@@ -172,6 +172,7 @@ export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/curl/lib/pkgconfig"
 # Initial mode for oh-my-posh template
 export POSH_VI_MODE="INSERT"
+export CONTEXT7_API_KEY=$(security find-generic-password -a "$USER" -s "CONTEXT7_API_KEY" -w)
 
 ### Aliases
 alias ls='ls --color'
@@ -195,6 +196,7 @@ alias c='clear'
 alias vimdiff='nvim -d'
 alias icat='kitten icat'
 alias printenvs='<<<${(F)path}'
+alias copilot='copilot --allow-tool=shell --deny-tool="shell(git push)"'
 
 ### ZSH Vi Mode
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
