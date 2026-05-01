@@ -47,6 +47,10 @@
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/org.yanex.marta/conf.marco: marta/conf.marco
     ~/Library/Application Support/org.yanex.marta/favorites.marco: marta/favorites.marco
+    ~/.copilot/copilot-instructions.md: copilot/copilot-instructions.md
+    ~/.copilot/mcp-config.json: copilot/mcp-config.json
+    ~/.copilot/instructions/: copilot/instructions/
+    ~/.agents: agents/
     # lazygit
     # brew
     # zellij -> replaced with tmux
