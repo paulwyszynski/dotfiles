@@ -14,6 +14,7 @@ return {
     lsp = {
       on_attach = function(client, bufnr)
         if client.name == "dartls" then
+          vim.lsp.document_color.enable(true, bufnr)
           vim.api.nvim_buf_set_keymap(
             bufnr,
             "n",
@@ -37,12 +38,6 @@ return {
       },
       outline = {
         open_cmd = "20vnew",
-      },
-      color = {
-        enabled = true,
-        background = true,
-        foreground = true,
-        virtual_text = true,
       },
     },
   },
