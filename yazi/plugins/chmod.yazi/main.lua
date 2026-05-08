@@ -1,4 +1,4 @@
---- @since 25.5.31
+--- @since 26.1.22
 
 local selected_or_hovered = ya.sync(function()
 	local tab, paths = cx.active, {}
@@ -32,13 +32,12 @@ return {
 		local value, event = ya.input {
 			title = "Chmod:",
 			pos = { "top-center", y = 3, w = 40 },
-			position = { "top-center", y = 3, w = 40 }, -- TODO: remove
 		}
 		if event ~= 1 then
 			return
 		end
 
-		local output, err = Command("chmod"):arg(value):arg(urls):stderr(Command.PIPED):output()
+		local output, err = Command("chmod"):arg(value):arg(urls):output()
 		if not output then
 			fail("Failed to run chmod: %s", err)
 		elseif not output.status.success then
