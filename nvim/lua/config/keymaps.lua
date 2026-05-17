@@ -41,6 +41,10 @@ keymap.set({ "n", "t" }, "<C-/>", toggle_root_terminal, { desc = "Terminal (Root
 keymap.set({ "n", "t" }, "<C-_>", toggle_root_terminal, { desc = "Terminal (Root Dir)" })
 keymap.set({ "n", "t" }, "<C-.>", toggle_cwd_terminal, { desc = "Terminal (cwd)" })
 
+-- INFO: Keeps your exact Ctrl-E/Y finger habits using the Alt key
+vim.keymap.set({ "n", "v" }, "<M-y>", "2zh", { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "<A-e>", "2zl", { noremap = true, silent = true })
+
 -- INFO: Not used anymore, since caps lock is remapped to escape
 -- Better escape
 -- keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true })
