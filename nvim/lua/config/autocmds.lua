@@ -26,3 +26,14 @@ api.nvim_create_autocmd("VimEnter", {
     end
   end,
 })
+
+-- INFO: Disable soft-wrap in markdown so render-markdown.nvim tables stay aligned.
+-- Wide tables scroll horizontally instead of wrapping and breaking the overlay.
+api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.wrap = false
+    vim.opt_local.sidescroll = 1
+    vim.opt_local.sidescrolloff = 5
+  end,
+})
