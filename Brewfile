@@ -149,6 +149,7 @@ mas 'Developer', id: 640_199_958
 mas 'Messenger', id: 1_480_068_668
 mas 'Playgrounds', id: 1_496_833_156
 mas 'Xcode', id: 497_799_835
+mas 'VidHub -Video Library & Player', id: 1_659_622_164
 
 vscode 'atommaterial.a-file-icon-vscode'
 vscode 'bradlc.vscode-tailwindcss'
