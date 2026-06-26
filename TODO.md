@@ -92,3 +92,7 @@ the personal email.
 not run on subsequent `./install` calls unless Homebrew is missing. Consider
 always calling `brew bundle` (or `brew bundle check || brew bundle`) from
 `setup_homebrew.sh` so a single `./install` is truly idempotent end-to-end.
+
+## Install MacFuse and SSHFS via Homebrew
+
+[macFUSE](https://macfuse.github.io/)
