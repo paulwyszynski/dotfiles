@@ -211,6 +211,40 @@ ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 
 ### Shell integrations
 
+fzf-grep-widget() {
+  local RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
+
+  # 1. Capture the selection text safely instead of using 'become'
+  local res=$(: | fzf --ansi --disabled \
+    --height=50% --layout=reverse --border \
+    --delimiter : \
+    --bind "change:reload:if [ \${#FZF_QUERY} -gt 1 ]; then $RG_PREFIX {q}; else :; fi || true" \
+    --preview "if [ -n \"{1}\" ]; then bat --color=always --style=numbers --highlight-line {2} {1} 2>/dev/null; fi" \
+    --preview-window "right,60%,border-left,+{2}-5/2,~3")
+
+  # 2. Open your default editor using standard shell execution
+  if [ -n "$res" ]; then
+    local file=$(echo "$res" | cut -d: -f1)
+    local line=$(echo "$res" | cut -d: -f2)
+
+    # Open the file on the exact line, defaulting to vim if $EDITOR is blank
+    ${EDITOR:-vim} "$file" +"$line"
+  fi
+
+  # 3. Clean up the screen layout when you exit the editor or press ESC
+  zle redisplay
+  zle reset-prompt
+}
+zle -N fzf-grep-widget
+
+bindkey '^G' fzf-grep-widget
+
+# Bind explicitly to Vi Insert mode
+bindkey -M viins '^G' fzf-grep-widget
+
+# Bind explicitly to Vi Normal/Command mode (Crucial Fix)
+bindkey -M vicmd '^G' fzf-grep-widget
+
 # Reset cursor to match current zsh-vi-mode after closing TUI apps (e.g. yazi)
 _fix_cursor() {
   case $ZVM_MODE in
