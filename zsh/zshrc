@@ -164,7 +164,11 @@ export FZF_DEFAULT_OPTS=" \
   --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
   --color=selected-bg:#494d64 \
   --multi \
-  --height 50%"
+  --height 50% \
+  --bind 'ctrl-d:preview-page-down' \
+  --bind 'ctrl-u:preview-page-up' \
+  --bind 'ctrl-j:preview-down' \
+  --bind 'ctrl-k:preview-up'"
 # For compilers to find curl you may need to set:
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/curl/lib"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
@@ -210,6 +214,26 @@ alias copilot='copilot --allow-tool="shell,read,write"'
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 
 ### Shell integrations
+
+# FZF
+# 1. Preview configuration ONLY for File Search (CTRL-T)
+export FZF_CTRL_T_OPTS="
+  --preview 'bat --color=always --style=numbers {} 2>/dev/null || cat {}'
+  --preview-window 'right,50%,border-left'
+"
+
+# 2. Preview configuration ONLY for Directory Search (ALT-C)
+# Uses 'eza' or 'ls' because you are previewing folders, not files
+export FZF_ALT_C_OPTS="
+  --preview 'eza --tree --level=9 --color=always {} 2>/dev/null || ls -CF {}'
+  --preview-window 'right,50%,border-left'
+"
+
+# 3. Clean configuration for Command History (CTRL-R)
+# Forces the preview window to be completely hidden for history
+export FZF_CTRL_R_OPTS="
+  --preview-window 'hidden'
+"
 
 fzf-grep-widget() {
   local RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
