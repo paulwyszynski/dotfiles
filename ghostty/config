@@ -9,6 +9,7 @@ quick-terminal-position = center
 quick-terminal-screen = mouse
 quick-terminal-size = 50%,75%
 link-url = true
+macos-option-as-alt = true
 custom-shader = shaders/cursor_blaze_tapered.glsl
 
 # keybinds
