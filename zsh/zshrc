@@ -80,6 +80,7 @@ function y() {
 
 # INFO: Mount or unmount the remote file system which resides on the Raspberry PI SD card
 PI_HOLE_MOUNT_PATH="$HOME/Volumes/sshfs/pihole"
+PI_NAS_MOUNT_PATH="$HOME/Volumes/sshfs/pinas"
 
 function mountPiHole() {
   mkdir -p "$PI_HOLE_MOUNT_PATH"
@@ -89,6 +90,17 @@ function mountPiHole() {
 
 function unmountPiHole() {
   diskutil unmount force "$PI_HOLE_MOUNT_PATH"
+  cd "$HOME" || exit
+}
+
+function mountPiNas() {
+  mkdir -p "$PI_NAS_MOUNT_PATH"
+  sshfs pi@pinas:/ "$PI_NAS_MOUNT_PATH"
+  cd "$PI_NAS_MOUNT_PATH" || exit
+}
+
+function unmountPiNas() {
+  diskutil unmount force "$PI_NAS_MOUNT_PATH"
   cd "$HOME" || exit
 }
 
