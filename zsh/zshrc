@@ -188,10 +188,15 @@ export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/curl/include"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/curl/lib/pkgconfig"
 # Initial mode for oh-my-posh template
 export POSH_VI_MODE="INSERT"
-export CONTEXT7_API_KEY=$(security find-generic-password -a "$USER" -s "CONTEXT7_API_KEY" -w)
-export TMDB_API_TOKEN=$(security find-generic-password -a "$USER" -s "TMDB_API_TOKEN" -w)
-### Copilot custom instructions dirs
+# Copilot custom instructions dirs
 export COPILOT_CUSTOM_INSTRUCTIONS_DIRS="$HOME/.copilot/instructions/android"
+# INFO: CONTEXT 7, TMDB api tokens
+# Ignore them if they're missing in the keychain
+for key in CONTEXT7_API_KEY TMDB_API_TOKEN; do
+  value=$(security find-generic-password -a "$USER" -s "$key" -w 2>/dev/null) &&
+    export "key=$value"
+done
+unset key value
 
 ### Aliases
 alias ls='ls --color'
