@@ -11,6 +11,7 @@
     - ~/.config/yazi
     - ~/.config/bat
     - ~/.config/oh-my-posh
+    - ~/.config/opencode
     # - ~/downloads
     # - ~/.vim/undo-history
 
@@ -51,6 +52,7 @@
     ~/.copilot/mcp-config.json: copilot/mcp-config.json
     ~/.copilot/instructions/: copilot/instructions/
     ~/.agents: agents/
+    ~/.config/opencode/: opencode/
     # lazygit
     # brew
     # zellij -> replaced with tmux
