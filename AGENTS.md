@@ -119,30 +119,39 @@ calls in `$TMPDIR` so status refreshes stay cheap.
 
 ### Active segments
 
-| Module    | Script                        | Visibility                                        |
-| --------- | ----------------------------- | ------------------------------------------------- |
-| `copilot` | `scripts/copilot-ai-usage.sh` | Only while `opencode` runs in current tmux server |
+| Module    | Script                        | Visibility                                     |
+| --------- | ----------------------------- | ---------------------------------------------- |
+| `copilot` | `scripts/copilot-ai-usage.sh` | opencode running (machine-wide) + `gh` auth'd  |
 
 `copilot` shows GitHub Copilot premium-request usage as `<used>/<entitlement>`
 (matches the counter on github.com Copilot settings). Backed by
-`gh api /copilot_internal/user` + `jq`. Cache TTL 60s → at most one API call per
-minute, and only while opencode is alive.
+`gh api /copilot_internal/user` + `jq`. Gated by `ps -axo ucomm=` matching
+`^opencode` (any tmux session, popup, or outside tmux — the process name is
+`opencode.exe` on macOS, and macOS `pgrep` can't see the process at all, so
+don't use `pgrep` or `pane_current_command`). Cache TTL 60s → at most one API
+call (or failed attempt) per minute; chip disappears when opencode exits or
+`gh` is logged out.
 
 ### Adding a new status segment
 
 1. Drop script in `tmux/scripts/<name>.sh` (exit empty on failure, `chmod +x`).
-2. In `tmux.conf`, before `status-right` is set:
+2. In `tmux.conf`, AFTER `run '~/.tmux/plugins/tpm/tpm'`:
 
    ```tmux
-   %hidden MODULE_NAME="<name>"
-   set -g  "@catppuccin_${MODULE_NAME}_icon"  "<nf-icon>"
-   set -gF "@catppuccin_${MODULE_NAME}_color" "#{E:@thm_<color>}"
+   set-environment -gh MODULE_NAME "<name>"
+   set -g  "@catppuccin_<name>_icon"  "<nf-icon>"
+   set -gF "@catppuccin_<name>_color" "#{E:@thm_<color>}"
    run-shell 'd=$(dirname "$(readlink -f "$HOME/.tmux.conf")"); \
      tmux set -g "@catppuccin_<name>_text" "##($d/scripts/<name>.sh)"'
    source-file ~/.tmux/plugins/tmux/utils/status_module.conf
    ```
 
    Then add `#{E:@catppuccin_status_<name>}` to `status-right`.
+
+   Use `set-environment -gh`, NOT `%hidden`: `%hidden` applies at config parse
+   time, but `run tpm` executes afterwards and catppuccin's module loading
+   overwrites `MODULE_NAME` — the builder would then rebuild the wrong module.
+   `setenv -gh` is a command, so it runs in order right before `source-file`.
 
    The `run-shell`/`readlink` dance is required because `#{d:current_file}`
    resolves through the `~/.tmux.conf` symlink and points at `$HOME` instead of
