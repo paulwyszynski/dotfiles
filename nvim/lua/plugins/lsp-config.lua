@@ -69,9 +69,23 @@ return {
         css = { "prettier" },
         html = { "prettier" },
         json = { "prettier" },
-        markdown = { "prettier" },
+        -- Runs after prettier: re-collapses the blank line prettier/other
+        -- tools may leave between a table and a directly-following
+        -- <!-- TBLFM: ... --> comment (Advanced Tables formula line must
+        -- stay immediately below the table it belongs to).
+        markdown = { "prettier", "fix_tblfm_spacing" },
         xml = { "xmlformat" },
         yaml = { "yamlfix" },
+      },
+      formatters = {
+        fix_tblfm_spacing = {
+          -- Pure-Lua formatter, no external command needed.
+          format = function(self, ctx, lines, callback)
+            local text = table.concat(lines, "\n")
+            local fixed = text:gsub("\n\n(<!%-%-%s*TBLFM:.-%-%->)", "\n%1")
+            callback(nil, vim.split(fixed, "\n"))
+          end,
+        },
       },
     },
   },
