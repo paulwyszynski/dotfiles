@@ -78,16 +78,16 @@ detach = "prefix+d"
 # close_workspace = "prefix+shift+d"
 # previous_workspace = "" # optional, unset by default
 # next_workspace = ""     # optional, unset by default
-previous_agent = "prefix+a"     # optional, unset by default
-next_agent = "prefix+shift+a"         # optional, unset by default
-focus_agent = "prefix+ctrl+1..9"        # optional indexed binding, e.g. "prefix+alt+1..9"
+previous_agent = "prefix+a"      # optional, unset by default
+next_agent = "prefix+shift+a"    # optional, unset by default
+focus_agent = "prefix+ctrl+1..9" # optional indexed binding, e.g. "prefix+alt+1..9"
 # remote_image_paste = "ctrl+v" # only active in herdr --remote; empty disables raw-key image paste
 # new_tab = "prefix+c"
 rename_tab = "prefix+shift+t"
 # previous_tab = "prefix+p"
 # next_tab = "prefix+n"
 # switch_tab = "prefix+1..9"
-switch_workspace = "prefix+shift+1..9"   # optional indexed binding, e.g. "prefix+shift+1..9"
+switch_workspace = "prefix+shift+1..9" # optional indexed binding, e.g. "prefix+shift+1..9"
 # close_tab = "prefix+shift+x"
 # rename_pane = "prefix+shift+p"
 # edit_scrollback = "prefix+e"
@@ -101,7 +101,7 @@ switch_workspace = "prefix+shift+1..9"   # optional indexed binding, e.g. "prefi
 split_vertical = "prefix+|"
 # split_horizontal = "prefix+minus"
 # close_pane = "prefix+x"
-zoom = "prefix+m"       # legacy alias: fullscreen
+zoom = "prefix+m" # legacy alias: fullscreen
 # resize_mode = "prefix+r"
 # toggle_sidebar = "prefix+b"
 
@@ -288,7 +288,7 @@ delivery = "system"
 # allow_nested = false
 # Experimental local Kitty graphics rendering for attached clients.
 # Requires a Kitty graphics-compatible outer terminal.
-# kitty_graphics = false
+kitty_graphics = true
 # Save recent pane screen history across full server restarts.
 pane_history = false
 # While prefix mode is active, temporarily switch the macOS host input
