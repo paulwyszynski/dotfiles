@@ -1,12 +1,12 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "3f2b882"
-hash = "7b625412411be411153886894d9acaf"
+rev = "72f9e3c"
+hash = "f281261ff04ad7ec867c3f802a50835f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "3f2b882"
-hash = "5b1c276b75cae91cbbdbe7863f39a540"
+rev = "72f9e3c"
+hash = "87472b05a8c420100f6a2b9cde1e7746"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
@@ -15,10 +15,10 @@ hash = "57056b9728006881d580ccabe8154a9c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "3f2b882"
-hash = "336548d9f67926e12d5584f60b790f1"
+rev = "72f9e3c"
+hash = "5bb0bfab901d3601c370eafdd66edd31"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "be0b21d"
+rev = "20b47bf"
 hash = "5b1bf96d1cba26376087c37de993c517"
