@@ -93,6 +93,22 @@ not run on subsequent `./install` calls unless Homebrew is missing. Consider
 always calling `brew bundle` (or `brew bundle check || brew bundle`) from
 `setup_homebrew.sh` so a single `./install` is truly idempotent end-to-end.
 
+## Retire remaining opencode references
+
+The repo moved to Claude Code, but two places still target opencode:
+
+- `tmux/tmux.conf:100` — `prefix + o` popup runs `opencode`
+- `tmux/scripts/copilot-ai-usage.sh:32` — the status pill only renders while an
+  `^opencode` process is running, so it never shows now
+
+Decide per item: repoint the popup at `claude`, and either change the gate in
+`copilot-ai-usage.sh` or drop the pill along with its block at the bottom of
+`tmux.conf`.
+
+Also unresolved: `agents/skills/` is still linked to `~/.agents/` but Claude
+Code only reads `~/.claude/skills/`, so those skills are inert. Migrate or
+delete them.
+
 ## Install MacFuse and SSHFS via Homebrew
 
 [macFUSE](https://macfuse.github.io/)
