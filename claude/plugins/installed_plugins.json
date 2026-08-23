@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "plugins": {
+    "context7@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/paule/.claude/plugins/cache/claude-plugins-official/context7/unknown",
+        "version": "unknown",
+        "installedAt": "2026-08-23T14:49:52.845Z",
+        "lastUpdated": "2026-08-23T14:54:13.686Z"
+      }
+    ]
+  }
+}

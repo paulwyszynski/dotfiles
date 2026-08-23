@@ -1,0 +1,18 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/paule/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-08-23T14:54:13.662Z"
+  },
+  "claude-community": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-community"
+    },
+    "installLocation": "/Users/paule/.claude/plugins/marketplaces/claude-community",
+    "lastUpdated": "2026-08-23T14:48:10.825Z"
+  }
+}

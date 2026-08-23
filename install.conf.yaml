@@ -54,6 +54,11 @@
     ~/.copilot/instructions/: copilot/instructions/
     ~/.agents: agents/
     ~/.config/opencode/: opencode/
+    ~/.claude/settings.json: claude/settings.json
+    ~/.claude/statusline-command.sh: claude/statusline-command.sh
+    ~/.claude/plugins/installed_plugins.json: claude/plugins/installed_plugins.json
+    ~/.claude/plugins/known_marketplaces.json: claude/plugins/known_marketplaces.json
+    ~/.claude/projects/-Users-paule--dotfiles/memory: claude/memory
     # lazygit
     # brew
     # zellij -> replaced with tmux
