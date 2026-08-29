@@ -59,6 +59,7 @@
     ~/.claude/plugins/installed_plugins.json: claude/plugins/installed_plugins.json
     ~/.claude/plugins/known_marketplaces.json: claude/plugins/known_marketplaces.json
     ~/.claude/projects/-Users-paule--dotfiles/memory: claude/memory
+    ~/Library/Application Support/superfile: superfile/
     # lazygit
     # brew
     # zellij -> replaced with tmux
