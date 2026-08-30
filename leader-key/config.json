@@ -1,0 +1,84 @@
+{
+  "actions" : [
+    {
+      "key" : "a",
+      "label" : "Android Studio",
+      "type" : "application",
+      "value" : "/Applications/Android Studio.app"
+    },
+    {
+      "key" : "b",
+      "label" : "Firefox",
+      "type" : "application",
+      "value" : "/Applications/Firefox.app"
+    },
+    {
+      "key" : "g",
+      "label" : "Ghostty",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "e",
+          "label" : "Signal",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
+        },
+        {
+          "key" : "m",
+          "label" : "Messages",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
+          "key" : "s",
+          "label" : "Signal",
+          "type" : "application",
+          "value" : "/Applications/Signal.app"
+        },
+        {
+          "key" : "w",
+          "label" : "Whatsapp",
+          "type" : "application",
+          "value" : "/Applications/WhatsApp.app"
+        }
+      ],
+      "key" : "m",
+      "label" : "Messages",
+      "type" : "group"
+    },
+    {
+      "key" : "o",
+      "label" : "Obsidian",
+      "type" : "application",
+      "value" : "/Applications/Obsidian.app"
+    },
+    {
+      "key" : "p",
+      "label" : "Spotify",
+      "type" : "application",
+      "value" : "/Applications/Spotify.app"
+    },
+    {
+      "key" : "s",
+      "label" : "System Settings",
+      "type" : "application",
+      "value" : "/System/Applications/System Settings.app"
+    },
+    {
+      "key" : "t",
+      "label" : "Timemator",
+      "type" : "application",
+      "value" : "/Applications/Timemator.app"
+    },
+    {
+      "key" : "x",
+      "label" : "Xcode",
+      "type" : "application",
+      "value" : "/Applications/Xcode-26.3.0.app"
+    }
+  ],
+  "type" : "group"
+}
