@@ -13,6 +13,13 @@ return {
       sources = {
         explorer = {
           layout = {
+            -- float the preview over the main editor window instead of inside the sidebar.
+            -- `hidden` starts it closed; `P` (explorer list key) toggles it.
+            -- both override the source default `preview = false`, which snacks rewrites into
+            -- `hidden` but which also wipes the "main" flag from the sidebar preset.
+            -- keep the `preview` box entry below: the layout only shows wins listed in the box.
+            preview = "main",
+            hidden = { "preview" },
             layout = {
               backdrop = false,
               width = 40,
