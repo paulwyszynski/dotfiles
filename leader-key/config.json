@@ -13,16 +13,71 @@
       "value" : "/Applications/Firefox.app"
     },
     {
+      "key" : "c",
+      "label" : "Calculator",
+      "type" : "application",
+      "value" : "/System/Applications/Calculator.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "a",
+          "label" : "Application Support",
+          "type" : "folder",
+          "value" : "/Users/paule/Library/Application Support"
+        },
+        {
+          "key" : "d",
+          "label" : "Downloads",
+          "type" : "folder",
+          "value" : "/Users/paule/Downloads"
+        },
+        {
+          "key" : "f",
+          "label" : "Home",
+          "type" : "folder",
+          "value" : "/Users/paule"
+        },
+        {
+          "key" : "g",
+          "label" : "Git",
+          "type" : "folder",
+          "value" : "/Users/paule/Dev/Git"
+        },
+        {
+          "key" : "s",
+          "label" : "Desktop",
+          "type" : "folder",
+          "value" : "/Users/paule/Desktop"
+        },
+        {
+          "key" : "x",
+          "label" : "Xcode",
+          "type" : "folder",
+          "value" : "/Users/paule/Library/Developer/Xcode"
+        }
+      ],
+      "key" : "f",
+      "label" : "Finder",
+      "type" : "group"
+    },
+    {
       "key" : "g",
       "label" : "Ghostty",
       "type" : "application",
       "value" : "/Applications/Ghostty.app"
     },
     {
+      "key" : "h",
+      "label" : "CaskHub",
+      "type" : "application",
+      "value" : "/Applications/CaskHub.app"
+    },
+    {
       "actions" : [
         {
           "key" : "e",
-          "label" : "Signal",
+          "label" : "Mail",
           "type" : "application",
           "value" : "/System/Applications/Mail.app"
         },
@@ -45,9 +100,16 @@
           "value" : "/Applications/WhatsApp.app"
         }
       ],
+      "iconPath" : "message",
       "key" : "m",
       "label" : "Messages",
       "type" : "group"
+    },
+    {
+      "key" : "n",
+      "label" : "Notes",
+      "type" : "application",
+      "value" : "/System/Applications/Notes.app"
     },
     {
       "key" : "o",
