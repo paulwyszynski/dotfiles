@@ -60,7 +60,7 @@
     ~/.claude/plugins/known_marketplaces.json: claude/plugins/known_marketplaces.json
     ~/.claude/projects/-Users-paule--dotfiles/memory: claude/memory
     ~/Library/Application Support/superfile/: superfile/
-    ~/Library/Application Support/Leader Key/: leader-key/
+    ~/Library/Application Support/: Leader Key/
     # lazygit
     # brew
     # zellij -> replaced with tmux

@@ -45,16 +45,29 @@
           "value" : "/Users/paule/Dev/Git"
         },
         {
+          "actions" : [
+            {
+              "key" : "g",
+              "label" : "Gradle",
+              "type" : "folder",
+              "value" : "/Users/paule/.gradle/caches/modules-2/files-2.1"
+            },
+            {
+              "key" : "x",
+              "label" : "Xcode",
+              "type" : "folder",
+              "value" : "/Users/paule/Library/Developer/Xcode"
+            }
+          ],
+          "key" : "i",
+          "label" : "IDE",
+          "type" : "group"
+        },
+        {
           "key" : "s",
           "label" : "Desktop",
           "type" : "folder",
           "value" : "/Users/paule/Desktop"
-        },
-        {
-          "key" : "x",
-          "label" : "Xcode",
-          "type" : "folder",
-          "value" : "/Users/paule/Library/Developer/Xcode"
         }
       ],
       "key" : "f",
