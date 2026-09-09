@@ -61,6 +61,7 @@
     ~/.claude/projects/-Users-paule--dotfiles/memory: claude/memory
     ~/Library/Application Support/superfile/: superfile/
     ~/Library/Application Support/: Leader Key/
+    ~/.config/omniwm: omniwm/
     # lazygit
     # brew
     # zellij -> replaced with tmux
