@@ -123,6 +123,7 @@ cask 'logi-options+'
 cask 'macfuse'
 cask 'marta'
 cask 'obsidian'
+cask 'omniwm'
 cask 'openmtp' # Alternative to Android File Transfer
 cask 'proxyman'
 cask 'rectangle'
