@@ -29,5 +29,6 @@
     }
   },
   "theme": "auto",
-  "editorMode": "vim"
+  "editorMode": "vim",
+  "advisorModel": "opus"
 }
