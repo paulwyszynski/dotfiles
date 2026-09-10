@@ -476,11 +476,11 @@ binding = "Option+Tab"
 id = "workspaceBackAndForth"
 
 [[hotkeys]]
-binding = "Unassigned"
+binding = "Control+Right Arrow"
 id = "switchWorkspace.next"
 
 [[hotkeys]]
-binding = "Unassigned"
+binding = "Control+Left Arrow"
 id = "switchWorkspace.previous"
 
 [[hotkeys]]
