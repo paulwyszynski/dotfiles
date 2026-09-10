@@ -5,3 +5,4 @@ mole/clean-list.txt
 **/__pycache__
 copilot/config.json
 copilot/settings.json
+pinned.json
