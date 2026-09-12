@@ -70,7 +70,7 @@
   background: var(--vimium-base);
   border: none;
   height: unset;
-  padding: 4px 6px;
+  padding: 8px 8px;
   font-family: "Maple Mono NF", monospace;
   caret-color: var(--vimium-lavender);
 }
