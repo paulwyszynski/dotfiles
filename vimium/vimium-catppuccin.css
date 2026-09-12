@@ -4,10 +4,12 @@
   --vimium-rosewater: #f4dbd6;
   --vimium-peach: #f5a97f;
   --vimium-green: #a6da95;
-  --vimium-blue: #8aadf4;
+  --vimium-teal: #8bd5ca;
   --vimium-lavender: #b7bdf8;
+  --vimium-pink: #f5bde6;
   --vimium-text: #cad3f5;
   --vimium-surface2: #5b6078;
+  --vimium-surface1: #494d64;
   --vimium-surface0: #363a4f;
   --vimium-base: #24273a;
   --vimium-mantle: #1e2030;
@@ -39,7 +41,9 @@
 
 #vomnibar {
   background: var(--vimium-base);
-  border: 2px solid var(--vimium-lavender);
+  border: 2px solid var(--vimium-pink);
+  border-radius: 10px;
+  box-shadow: 0 20px 44px rgba(24, 25, 38, 0.55);
   animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
   max-height: calc(100vh - 70px);
   overflow: hidden;
@@ -68,6 +72,7 @@
   height: unset;
   padding: 4px 6px;
   font-family: "Maple Mono NF", monospace;
+  caret-color: var(--vimium-lavender);
 }
 
 #vomnibar .vomnibarSearchArea {
@@ -80,12 +85,29 @@
   padding: 0;
   margin: 0;
   background: var(--vimium-base);
-  border-top: 1px solid var(--vimium-surface0);
+  border-top: 1px solid var(--vimium-surface1);
+}
+
+#vomnibar ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+#vomnibar ul::-webkit-scrollbar-thumb {
+  background-color: var(--vimium-surface1);
+  border-radius: 4px;
+}
+
+#vomnibar ul::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 #vomnibar li {
-  padding: 6px;
+  padding: 6px 10px;
   border-bottom: 1px solid var(--vimium-surface0);
+  border-left: 3px solid transparent;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease;
 }
 
 #vomnibar li .vomnibarTopHalf,
@@ -94,17 +116,21 @@
 }
 
 #vomnibar li .vomnibarSource {
+  display: inline-block;
   color: var(--vimium-peach);
+  background: color-mix(in srgb, var(--vimium-peach) 14%, transparent);
+  padding: 1px 6px;
+  border-radius: 4px;
 }
 
 #vomnibar li em,
 #vomnibar li .vomnibarTitle {
-  color: var(--vimium-blue);
-  font-weight: bold;
+  color: var(--vimium-text);
+  font-weight: 500;
 }
 
 #vomnibar li .vomnibarUrl {
-  color: var(--vimium-rosewater);
+  color: var(--vimium-teal);
 }
 
 #vomnibar li .vomnibarMatch {
@@ -112,12 +138,9 @@
   font-weight: bold;
 }
 
-#vomnibar li .vomnibarTitle .vomnibarMatch {
-  color: var(--vimium-blue);
-}
-
 #vomnibar li.vomnibarSelected {
   background-color: var(--vimium-surface0);
+  border-left-color: var(--vimium-lavender);
 }
 
 div.vimiumHUD {
