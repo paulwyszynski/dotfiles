@@ -112,7 +112,16 @@
 
 #vomnibar li .top-half,
 #vomnibar li .bottom-half {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   padding: 2px 0;
+}
+
+#vomnibar li .top-half .source,
+#vomnibar li .bottom-half .source,
+#vomnibar li .bottom-half .icon {
+  flex: 0 0 auto;
 }
 
 #vomnibar li .source {
@@ -127,6 +136,15 @@
 #vomnibar li .title {
   color: var(--vimium-text);
   font-weight: 500;
+}
+
+#vomnibar li .top-half .title,
+#vomnibar li .bottom-half .url {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #vomnibar li .url {
