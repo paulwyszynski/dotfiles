@@ -32,7 +32,7 @@ delete_items = ['ctrl+d', 'delete', '']
 permanently_delete_items = ['D', '']
 # compress and extract
 extract_file = ['ctrl+e', '']
-compress_file = ['ctrl+a', '']
+compress_file = ['ctrl+z', '']
 # editor
 open_file_with_editor = ['e', '']
 open_current_directory_with_editor = ['E', '']
