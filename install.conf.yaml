@@ -61,7 +61,10 @@
     ~/.claude/projects/-Users-paule--dotfiles/memory: claude/memory
     ~/Library/Application Support/superfile/: superfile/
     ~/Library/Application Support/: Leader Key/
-    ~/.config/omniwm: omniwm/
+    # omniwm: no native private/work overlay support, so ~/.config/omniwm is a
+    # hand-made per-machine symlink instead of a dotbot-managed link — point it
+    # at omniwm/private/omniwm/ or omniwm/work/omniwm/ depending on the machine.
+    ~/config/omniwm: omniwm/private/omniwm/settings.toml
     # lazygit
     # brew
     # zellij -> replaced with tmux

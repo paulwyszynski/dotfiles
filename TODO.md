@@ -86,6 +86,41 @@ Suggested approach using `includeIf`:
 This avoids a separate full install profile while still keeping work commits off
 the personal email.
 
+## Automate private vs. work config selection
+
+`omniwm/` now has `private/omniwm/` and `work/omniwm/` as full config-dir
+variants (see `CLAUDE.md`'s "Private vs. work config" section), but
+`~/.config/omniwm` is hand-symlinked to the right one per machine. Generalize
+this so adding a profile-split tool doesn't require memorizing/repeating a
+manual symlink step.
+
+Concept:
+
+1. **Folder convention stays opt-in.** A tool with one config stays flat
+   (`<tool>/`, linked via `link:` as today) — that's the default when there's
+   no split. Only tools that need two variants grow `<tool>/private/` and
+   `<tool>/work/` subfolders, each a full drop-in copy of that tool's real
+   config dir.
+2. **One canonical profile marker.** An untracked file, e.g.
+   `~/.dotfiles-profile` containing `work` or `private`, set once per machine
+   (defaults to `private` if absent). Simpler and more robust than hostname
+   matching (survives renames/reinstalls).
+3. **A `shell:`-phase script, not a `link:` entry.** `install.conf.yaml`'s
+   `link:` map is static and shared across machines (`clean: ['~']` +
+   `relink: true`), so it can't express "this symlink, but only on this
+   machine" — declaring one variant there would let `./install` on the other
+   machine stomp its symlink. Instead add `setup_profile_links.sh` to the
+   existing `shell:` phase (same pattern as `setup_homebrew.sh`/
+   `setup_zsh.sh`/`setup_zoxide.sh`): it reads the profile marker and, for
+   each tool folder that has both `private/` and `work/`, symlinks that
+   tool's real config path to the matching variant. Tools without a `work/`
+   variant are untouched and keep flowing through `link:` as now.
+4. Migrate omniwm's existing hand-symlink to go through this script once it
+   exists.
+
+Adding a new profile-split tool afterward is then: create the `work/` folder +
+one line in the script's tool→path map — no `install.conf.yaml` changes.
+
 ## Automate `brew bundle` from `install`
 
 `setup_homebrew.sh` already calls `brew bundle --verbose`, but `brew bundle` is

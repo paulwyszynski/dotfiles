@@ -30,6 +30,25 @@ Edit `install.conf.yaml` — the `link:` section is the canonical map. Whole
 directories can be linked (e.g. `nvim/`, `ghostty/`, `yazi/`); individual files
 are used for tools that don't support XDG config dirs well.
 
+## Private vs. work config
+
+Two patterns, chosen by whether the tool supports a native include/overlay
+mechanism:
+
+- **Has one** (git `includeIf`, ssh `Include`, zsh sourcing a `*-local` file):
+  track one base file plus one work-overlay file, link both unconditionally
+  via `install.conf.yaml`. No per-machine anything. See `TODO.md`'s planned
+  git `gitconfig-work` overlay.
+- **Doesn't** (a single monolithic config file, e.g. omniwm's `settings.toml`):
+  full variant swap. Track a complete config-dir copy per machine
+  (`omniwm/private/omniwm/`, `omniwm/work/omniwm/`), each a drop-in
+  replacement for the tool's real config dir, and hand-symlink (e.g.
+  `~/.config/omniwm`) to whichever variant applies on that machine — **not**
+  through `install.conf.yaml`, since `clean: ['~']`/`relink: true` apply the
+  same map on every machine and would stomp the other variant's symlink on
+  the next `./install`. Shared settings between variants must be edited in
+  both copies; there's no dedup.
+
 ## Package management
 
 Add packages to `Brewfile`. Then run `brew bundle`. Commented-out entries
@@ -57,6 +76,7 @@ replacements — don't re-enable them.
 | `ncspot/`             | ncspot (Spotify)   | `config.toml` + cached `userstate.cbor`                                                      |
 | `herdr/`              | Herdr              | Single `config.toml`                                                                         |
 | `mole/`               | Mole               | Synced state/prefs                                                                           |
+| `omniwm/`             | OmniWM tiling WM   | `private/omniwm/` and `work/omniwm/` are full config-dir variants; see "Private vs. work config" below |
 | `claude/`             | Claude Code        | See "Claude Code setup" below                                                                |
 | `copilot/`            | GitHub Copilot CLI | Linked into `~/.copilot/`: instructions + `mcp-config.json`                                  |
 | `agents/`             | Legacy skills      | Linked to `~/.agents/`; not read by Claude Code — see below                                  |
