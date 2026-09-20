@@ -6,3 +6,4 @@ mole/clean-list.txt
 copilot/config.json
 copilot/settings.json
 pinned.json
+opencode/*
