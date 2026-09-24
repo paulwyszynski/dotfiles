@@ -7,6 +7,7 @@ schemaVersion = 3
 
 [appearance]
 mode = "dark"
+tabRailAppIcons = false
 
 [borders]
 enabled = true
@@ -66,10 +67,17 @@ fingerCount = 3
 invertDirection = true
 mouseMoveModifierKey = "option"
 mouseResizeModifierKey = "option"
+overviewGestureEnabled = false
+overviewGestureFingerCount = 4
 scrollEnabled = true
 scrollModifierKey = "optionShift"
 scrollSensitivity = 5.0
 trackpadScrollStyle = "snap"
+windowGestureSensitivity = 1.0
+windowMoveEnabled = false
+windowMoveFingerCount = 4
+windowResizeEnabled = false
+windowResizeFingerCount = 3
 workspaceSwipeAxis = "vertical"
 workspaceSwipeEnabled = false
 workspaceSwipeFingerCount = 3
@@ -93,6 +101,9 @@ singleWindowFit = "fill"
 visibleContainerCount = 2
 
 [overview]
+invertScrollDirection = false
+matchFocusBorder = true
+mouseScrollSpeed = 1.0
 zoom = 1.0
 
 [overview.backdrop]
@@ -202,6 +213,48 @@ gridRow = 0
 monitorDisplayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
 monitorName = "Built-in Retina Display"
 
+[[routing.arrangements]]
+id = "737BF668-699D-43BE-969F-B02F00AEEE78"
+
+[[routing.arrangements.monitors]]
+gridColumn = 1
+gridRow = 0
+monitorDisplayUUID = "7C98C152-00A0-4EE4-B2A1-CE0A15A537D2"
+monitorName = "DELL P2723D"
+
+[[routing.arrangements.monitors]]
+gridColumn = 2
+gridRow = 0
+monitorDisplayUUID = "AB03B574-B9A7-4A9A-BBD4-AE4F628605FD"
+monitorName = "DELL P2723DE"
+
+[[routing.arrangements.monitors]]
+gridColumn = 0
+gridRow = 0
+monitorDisplayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
+monitorName = "Built-in Retina Display"
+
+[[routing.arrangements]]
+id = "659FC110-F8D1-4E90-B63B-2797EB45B20D"
+
+[[routing.arrangements.monitors]]
+gridColumn = 1
+gridRow = 0
+monitorDisplayUUID = "207ED5F5-4FF6-4577-AE7C-F7853ECAF154"
+monitorName = "DELL P2723D (1)"
+
+[[routing.arrangements.monitors]]
+gridColumn = 2
+gridRow = 0
+monitorDisplayUUID = "E5BE97CF-278B-4CED-821D-05615A0F5539"
+monitorName = "DELL P2723D (2)"
+
+[[routing.arrangements.monitors]]
+gridColumn = 0
+gridRow = 0
+monitorDisplayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
+monitorName = "Built-in Retina Display"
+
 [scratchpads]
 
 [scratchpads.labels]
@@ -225,9 +278,13 @@ position = "overlappingMenuBar"
 reserveLayoutSpace = false
 revealHoldMilliseconds = 200.0
 revealModifier = "off"
+showAccentHighlights = true
 showFloatingWindows = false
+showItemBackgrounds = true
 showLabels = true
+solidBlackBackground = false
 systemStatsButton = false
+transparentBackground = false
 windowLevel = "popup"
 xOffset = 0.0
 yOffset = 5.0
@@ -753,19 +810,19 @@ binding = "Unassigned"
 id = "toggleNativeFullscreen"
 
 [[hotkeys]]
-binding = "Option+Shift+Left Arrow"
+binding = "Control+Option+Shift+Left Arrow"
 id = "moveColumn.left"
 
 [[hotkeys]]
-binding = "Option+Shift+Right Arrow"
+binding = "Control+Option+Shift+Right Arrow"
 id = "moveColumn.right"
 
 [[hotkeys]]
-binding = "Option+Shift+Up Arrow"
+binding = "Control+Option+Shift+Up Arrow"
 id = "moveColumn.up"
 
 [[hotkeys]]
-binding = "Option+Shift+Down Arrow"
+binding = "Control+Option+Shift+Down Arrow"
 id = "moveColumn.down"
 
 [[hotkeys]]
@@ -1102,7 +1159,11 @@ layoutType = "dwindle"
 name = "5"
 
 [workspaces.monitorAssignment]
-type = "main"
+type = "specificDisplay"
+
+[workspaces.monitorAssignment.output]
+displayUUID = "AB03B574-B9A7-4A9A-BBD4-AE4F628605FD"
+name = "DELL P2723DE"
 
 [[workspaces]]
 displayName = "6"
@@ -1111,7 +1172,11 @@ layoutType = "dwindle"
 name = "6"
 
 [workspaces.monitorAssignment]
-type = "main"
+type = "specificDisplay"
+
+[workspaces.monitorAssignment.output]
+displayUUID = "AB03B574-B9A7-4A9A-BBD4-AE4F628605FD"
+name = "DELL P2723DE"
 
 [[workspaces]]
 displayName = "7"
@@ -1120,7 +1185,11 @@ layoutType = "dwindle"
 name = "7"
 
 [workspaces.monitorAssignment]
-type = "main"
+type = "specificDisplay"
+
+[workspaces.monitorAssignment.output]
+displayUUID = "AB03B574-B9A7-4A9A-BBD4-AE4F628605FD"
+name = "DELL P2723DE"
 
 [[workspaces]]
 id = "0E18F6B0-345A-4078-8B21-33641F07A861"
@@ -1128,7 +1197,11 @@ layoutType = "dwindle"
 name = "8"
 
 [workspaces.monitorAssignment]
-type = "main"
+type = "specificDisplay"
+
+[workspaces.monitorAssignment.output]
+displayUUID = "AB03B574-B9A7-4A9A-BBD4-AE4F628605FD"
+name = "DELL P2723DE"
 
 [[workspaces]]
 id = "8D4D711C-2B2F-4FEC-86BF-FA952037738A"
@@ -1136,4 +1209,8 @@ layoutType = "dwindle"
 name = "9"
 
 [workspaces.monitorAssignment]
-type = "secondary"
+type = "specificDisplay"
+
+[workspaces.monitorAssignment.output]
+displayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
+name = "Built-in Retina Display"
