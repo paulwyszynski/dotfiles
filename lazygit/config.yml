@@ -19,6 +19,8 @@ gui:
     unstagedChangesColor: ['#ed8796']
     defaultFgColor: ['#cad3f5']
     searchingActiveBorderColor: ['#eed49f']
+    authorColors:
+      Paul Wyszynski: white
   commitLength:
     show: true
   mouseEvents: true
@@ -33,8 +35,6 @@ gui:
   commandLogSize: 8
   splitDiff: auto # one of 'auto' | 'always'
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
-  authorColors:
-    Paul Wyszynski: white
 git:
   diffRenderers:
     - colorArg: always
