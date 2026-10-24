@@ -19,13 +19,20 @@
     "ralph-loop@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": false,
     "mattpocock-skills@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true
+    "frontend-design@claude-plugins-official": true,
+    "usage-board@claude-mods": true
   },
   "extraKnownMarketplaces": {
     "claude-community": {
       "source": {
         "source": "github",
         "repo": "anthropics/claude-plugins-community"
+      }
+    },
+    "claude-mods": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/paule/Dev/Git/Claude/Claude-Mods"
       }
     }
   },
