@@ -33,6 +33,47 @@ if [ -n "$used_pct" ]; then
   context_segment=$(printf "${TEAL} [%s%s] %d%%${RESET}" "$filled_bar" "$empty_bar" "$pct")
 fi
 
+# Usage limit (5-hour window) as a progress bar, appended to the context segment.
+# rate_limits is only sent for Claude.ai subscribers after the first API response.
+PEACH='\033[38;2;245;169;127m' # #F5A97F - usage limit bar
+limit_pct=$(echo "$input" | jq -r '.rate_limits.five_hour.used_percentage // empty')
+if [ -n "$limit_pct" ]; then
+  lpct=$(printf '%.0f' "$limit_pct")
+  [ "$lpct" -lt 0 ] && lpct=0
+  [ "$lpct" -gt 100 ] && lpct=100
+  lfilled=$(( (lpct * 10 + 50) / 100 ))
+  lempty=$(( 10 - lfilled ))
+  lfilled_bar=$(printf '%*s' "$lfilled" '' | tr ' ' '█')
+  lempty_bar=$(printf '%*s' "$lempty" '' | tr ' ' '░')
+  reset_txt=""
+  resets_at=$(echo "$input" | jq -r '.rate_limits.five_hour.resets_at // empty')
+  if [ -n "$resets_at" ]; then
+    reset_fmt=$(date -r "${resets_at%.*}" "+%-I:%M%p" 2>/dev/null)
+    [ -n "$reset_fmt" ] && reset_txt=" resets $reset_fmt"
+  fi
+  context_segment="$context_segment$(printf "${PEACH} 5h [%s%s] %d%%%s${RESET}" "$lfilled_bar" "$lempty_bar" "$lpct" "$reset_txt")"
+fi
+
+# Weekly usage limit (7-day window) as a progress bar, placed after the 5-hour bar.
+MAUVE='\033[38;2;198;160;246m' # #C6A0F6 - weekly limit bar
+week_pct=$(echo "$input" | jq -r '.rate_limits.seven_day.used_percentage // empty')
+if [ -n "$week_pct" ]; then
+  wpct=$(printf '%.0f' "$week_pct")
+  [ "$wpct" -lt 0 ] && wpct=0
+  [ "$wpct" -gt 100 ] && wpct=100
+  wfilled=$(( (wpct * 10 + 50) / 100 ))
+  wempty=$(( 10 - wfilled ))
+  wfilled_bar=$(printf '%*s' "$wfilled" '' | tr ' ' '█')
+  wempty_bar=$(printf '%*s' "$wempty" '' | tr ' ' '░')
+  wreset_txt=""
+  wresets_at=$(echo "$input" | jq -r '.rate_limits.seven_day.resets_at // empty')
+  if [ -n "$wresets_at" ]; then
+    wreset_fmt=$(date -r "${wresets_at%.*}" "+%a %-I:%M%p" 2>/dev/null)
+    [ -n "$wreset_fmt" ] && wreset_txt=" resets $wreset_fmt"
+  fi
+  context_segment="$context_segment$(printf "${MAUVE} 7d [%s%s] %d%%%s${RESET}" "$wfilled_bar" "$wempty_bar" "$wpct" "$wreset_txt")"
+fi
+
 # Git branch + working tree status (skip optional locks to avoid contention)
 git_segment=""
 if git -C "$cwd" --no-optional-locks rev-parse --is-inside-work-tree >/dev/null 2>&1; then
