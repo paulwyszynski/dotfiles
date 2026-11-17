@@ -7,3 +7,7 @@ copilot/config.json
 copilot/settings.json
 pinned.json
 opencode/*
+omniwm/*/omniwm/settings.toml.pre-v5
+omniwm/*/omniwm/shell/default/
+omniwm/*/omniwm/shell/omniwm.d.luau
+omniwm/*/omniwm/shell/.luaurc

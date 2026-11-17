@@ -1,0 +1,34 @@
+
+[profiles]
+
+[profiles.default]
+center = ["workspaces"]
+leading = []
+theme = "catppuccin"
+trailing = []
+
+[profiles.default.widgets]
+
+[profiles.default.widgets.privacy]
+icons = true
+
+[profiles.default.widgets.workspaces]
+indicator = "pills"
+
+[profiles.default.workspaceBar]
+autoHide = false
+backgroundOpacity = 0.0
+fullWidth = false
+height = 32.0
+hideEmptyWorkspaces = true
+hoverPreviewsEnabled = false
+inactiveIconOpacity = 0.5
+notificationBadges = "off"
+position = "overlappingMenuBar"
+reserveLayoutSpace = true
+showAccentHighlights = true
+showFloatingWindows = false
+showItemBackgrounds = false
+solidBlackBackground = false
+transparentBackground = false
+windowLevel = "floating"
