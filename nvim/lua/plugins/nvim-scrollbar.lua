@@ -1,16 +1,8 @@
 return {
   "petertriho/nvim-scrollbar",
   opts = {
-    handle = {
-      color = "#6E738D",
+    scrollbar = {
+      preset = "search",
     },
   },
-  -- INFO: Alternative way to configure the plugin
-  -- config = function()
-  --   require("scrollbar").setup({
-  --     handle = {
-  --       color = "#6E738D",
-  --     },
-  --   })
-  -- end,
 }
